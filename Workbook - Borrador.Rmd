@@ -1,0 +1,202 @@
+---
+title: "How to Clean your Data Quickly With Tidyverse"
+output:
+  html_document:
+    highlightLine: true
+    df_print: paged
+  pdf_document: default
+editor_options:
+  chunk_output_type: inline
+---
+
+![imagen? creditos?](Sergio.jpeg)
+
+<span style="color: red;"> 
+Pendientes/ Ideas que podrian ir aqui como primeras paginas:
+- Definir el titulo <br>
+- mini intro sobre el taller, Sergio, creditos, books? <br>
+- Darles indicaciones sobre como usar el workbook?
+- Introducir la data de practica?
+</span>
+
+Let’s start this workshop with a quick fill-in-the-blanks exercise. Whether you have used R before or not, I’m sure you are very familiar with spreadsheets. So let’s think in terms of spreadsheets for a second. Let’s say you have a data set, which contains years, and you only want to look at the records from 2020. To accomplish this, you would _______ the data. Now, if you had, let’s say, 25 columns, and you really only wanted to see 4, you would ______ the rest and maybe hide them for a moment. If you filled in the blaks with the words filter and select, congatulations! You already know some function names in dplyr. Don’t worry, we will learn about dplyr in the next pages, but let’s get set up with R first.
+
+<span style="color: red;"> 
+Ideas que podrian ir aqui:
+- Que es R, como instalar R, describir y mandarlos al link del video?
+- Que es un paquete y como instalar?
+install.packages("dplyr")
+- Como "activar" el paquete en una nueva sesion
+You only need to install the package once, but you will have to load it into each new session that you open. To do this, simply enter the code below:
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+```
+
+<span style="color: red;">
+What you need to know about dplyr<br>
+- Que es dplyr?<br>
+- Hablar del data set?<br>
+</span>
+
+## A few things to note before we start
+
+
+1. Functions will return their results as a new data frame. Be careful to name it properly so you don't overwrite your data.
+
+2. When you are first starting, I recommend you keep a variable directory to keep things in order
+
+
+We are ready to begin. Open a new file in R Studio.
+
+
+
+# DPLYR Functions
+Please note this is not a comprehensive list.
+
+In easy words, and using an analogy, dplyr is like your tool kit stored in a toolbox. To use your tools, you have to:
+
+1. Get your toolbox (Install the package - you only need to do this once)
+
+2. Open your toolbox (Load the package using library)
+
+3. Grab the tool(s) you need (Call dplyr functions)
+
+
+## Filter
+
+
+The filter() function allows you to extract a **subset of rows** from your data frame.
+
+You can use mathematical operators to tell R what you want to filter.
+
+<  : Less than <br>
+<= : Less than or equal to <br> 
+>  : Greater than <br>
+>= : Greater than or equal to <br>
+== : Equal to <br>
+!= : Different than <br>
+
+In addition, if you want to use a combination of these, you may use:
+
+& for "and" <br>
+| for "or"
+
+
+<span style="color: red;"> - Ejemplo de filter 
+</span>
+
+
+
+## Select
+
+
+The Select () function allows you to select **columns** of a data frame that you want to work with.
+
+You can use a colon (:) inside the select()function to select a range of columns or variable names. Remember that every column is a variable in your data frame.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+```
+
+You can also use the negative sign (-) inside the select() function to omit variables (columns). Using the (-) sign tells R to include every variable, except for the one next to the negative sign.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+```
+
+
+Like we mentioned earlier, naming your variables correctly and keeping track of this will make your job a lot easier.
+Following this, if you need to select variables based on patterns, you may add this to the select() function.
+
+1. To keep variables that **start** with a specific character (or string of characters):
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+```
+
+2. To keep variables that **end** with a specific character (or string of characters):
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+```
+
+
+## Mutate
+
+
+The Mutate() function allows you to "mutate" your dataset. That means, to add new variables(columns) or transform existing ones.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+```
+
+## Group_by()
+
+The group_by() function allows you to generate and easily see summary statistics from your data frame, calculated based on a specify variable.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+# nuevo <- select(df, ends_with("1"))
+```
+
+## Case_when
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+# nuevo <- select(df, ends_with("1"))
+```
+
+
+## Summarise
+
+The summarise() function is often used in conjunction with the group_by()function. We do this when we want to see summary statistics by groups defined by variables.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+
+```
+
+
+## The "pipe" operator(%>%)
+### Your new best friend
+
+The "pipe" operator allows you to string together multiple dplyr functions in an easy-to-read sequence. Let's see an example:
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+# nuevo <- select(df, ends_with("1"))
+```
+
+
+# Practice makes perfect
+
+You have now become familiar with some of the most used dplyr functions. To really learn, put your new knowledge into practice. I invite you to try to do the examples again. This time, trying to "solve the problem" on your own first, before looking at the answer.
+
+
+## Getting your first exploratory data analysis
+
+Want to test your knowledge even further? 
+From the example you saw in the workshop, and using the data set _______, try to answer the following question: ________________
+
+Only look at the code on the last page if you get stuck.
+
+```{r message=FALSE, warning=FALSE}
+## Ejemplo
+
+```
+
+
+## Your checklist
+Before attempting to put these tools into practice with your own data, make sure that you have:
+
+[ ] Your data set
+[ ] A copy of your original data set saved somewhere else <br>
+[ ] The question you want to answer, clearly defined <br>
+[ ] The dplyr package installed <br>
+[ ] The dplyr package loaded <br>
+[ ] Your variable directory <br>
+
+
+<span style="color: red;"> 
+Agregar agraedecimientos, siguientes pasos, recursos adicionales, etc?
+</span>
