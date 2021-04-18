@@ -1,0 +1,52 @@
+---
+title: "How to Clean your Data Quickly With Tidyverse"
+subtitle: "People Analytics World 2021"
+author: "Sergio Garcia Mora"
+institute: "Data IQ | Club de R para RRHH | Data 4HR"
+date: "April 20th, 2021"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    css: [default, shinobi, tamu-fonts]
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+    language: "spanish"
+---
+
+class: inverse, top, center
+background-image: url(Files/cover.png)
+background-size: cover
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
+```
+
+
+
+---
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "r4hr/r4hr_paworld_intro_dplyr") %>% 
+  meta_social(
+    title = "How to Clean your Data Quickly With Tidyverse",
+    description = paste(
+      "This is an introductory tutorial on",
+      "por el Club de R para RRHH"),
+    url = "https://clubder-rmarkdown.netlify.app/",
+    image = "https://github.com/r4hr/r4hr_introduccion_dplyr/blob/main/Archivos/kiwi-fondo.png",
+    image_alt = paste(
+      "Inttroducción a dplyr", 
+      "Desarrollada por el Club de R para RRHH"
+    ),
+    og_type = "website",
+    og_author = "Sergio Garcia Mora",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@sergiogarciamor",
+    twitter_site = "@club_rrhh"
+  )
+```
