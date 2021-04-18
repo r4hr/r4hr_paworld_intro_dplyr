@@ -38,22 +38,21 @@ background-size: cover
 
 
 
----
 
 ---
-class: inverse, top, center
+class: top, center
 background-image: url(Files/dataiq1.png)
-background-size: cover
+background-size: contain
+
 
 ---
----
-class: inverse, top, center
+class:  top, center
 background-image: url(Files/dataiq2.png)
-background-size: cover
+background-size: contain
 
 ---
 
-class: inverse, top, center
+class: top, center
 background-image: url(Files/dataiq3.png)
 background-size: cover
 
@@ -63,18 +62,19 @@ background-image: url(Files/team.png)
 background-size: cover
 
 ---
-# The Club de R para RRHH
+# Club de R para RRHH
 .left-column[
-
+.middle[
 &lt;img src="Files/clubder.png" /&gt;
+]
 ]
 
 .right-column[
 The [Club de R para RRHH](https://linktr.ee/r4hrclub) is a community for learning to code in R for people who work in Human Resources or aspire to work in this field.
 
-We develop materials in Spanish, use HR data in our examples, and we learn how to use different packages, learn how to make predictive analysis, text mining and so on.
+We develop resources in Spanish, use HR data in our examples, and we learn how to use different packages, learn how to make predictive analysis, text mining and so on.
 
-This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more.
+This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more 🌏.
 ]
 
 ---
@@ -124,6 +124,32 @@ R is a open source language, that became very popular for analyzing data and sta
 ]
 
 ---
+# Tidy data
+
+.left-column[
+&lt;img src="Files/mess.png" /&gt;
+]
+
+.right-column[
+Data in tutorials is perfect, neat, and clean. And everytime you try to replicate the same analyisis with your own data, things rarely work in the same way, and you end up spending a lot of time getting your data right to run an analysis... in Excel 🤷
+]
+--
+.right-column[
+That's why cleaning and tidying your data explains from 60 al 80% of the time of any Analytics project. This process is known as *data cleansing* or *data wrangling*. **Tidyverse** is collection of packages that allow us to get our **tidy data** to develop our analysis. There are some **tidy data principles** we all need to know:
+]
+--
+.right-column[
+1. Each variable must have its own column.
+2. Each observation must have its own row.
+3. Each value must have its own cell.
+]
+
+---
+# Tidyverse
+
+.center[&lt;img src="Files/tidyverse_packs.jpeg" width="40%"/&gt;]
+
+Tidyverse is a collection of packaged for cleaning, transforming, manipulating and wrangling data. To start using
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
