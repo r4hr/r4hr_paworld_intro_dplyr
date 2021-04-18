@@ -74,7 +74,7 @@ The [Club de R para RRHH](https://linktr.ee/r4hrclub) is a community for learnin
 
 We develop resources in Spanish, use HR data in our examples, and we learn how to use different packages, learn how to make predictive analysis, text mining and so on.
 
-This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more 🌏.
+This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more 🌎.
 ]
 
 ---
@@ -145,11 +145,48 @@ That's why cleaning and tidying your data explains from 60 al 80% of the time of
 ]
 
 ---
+background-color: #BDCBD4
 # Tidyverse
+
+Tidyverse is a collection of packaged for cleaning, transforming, manipulating and wrangling data. 
 
 .center[&lt;img src="Files/tidyverse_packs.jpeg" width="40%"/&gt;]
 
-Tidyverse is a collection of packaged for cleaning, transforming, manipulating and wrangling data. To start using
+To start using we have to install it. This is a one time process, and all you have to do is type in your RStudio console
+
+```r
+# Install tidyverse packages for the first time
+install.packages("tidyverse")
+```
+
+---
+# Tidyverse
+
+Once the package is installed, we need to load or "activate" the package in order to use its functions. We need the `library()` function to do it.
+
+
+```r
+# Load tiverse packages
+library(tidyverse)
+```
+
+```
+## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --
+```
+
+```
+## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.1.0     v dplyr   1.0.5
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.1
+```
+
+```
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+```
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
