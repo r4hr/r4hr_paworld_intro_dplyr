@@ -13,7 +13,6 @@ output:
       ratio: "16:9"
       highlightStyle: github
       highlightLines: true
-    language: "spanish"
 ---
 
 class: inverse, top, center
@@ -35,18 +34,103 @@ meta() %>%
   meta_social(
     title = "How to Clean your Data Quickly With Tidyverse",
     description = paste(
-      "This is an introductory tutorial on",
-      "por el Club de R para RRHH"),
-    url = "https://clubder-rmarkdown.netlify.app/",
-    image = "https://github.com/r4hr/r4hr_introduccion_dplyr/blob/main/Archivos/kiwi-fondo.png",
+      "This is an introductory tutorial about cleansing data",
+      "for the People Analytics World conference 2021",
+      " developed by Sergio Garcia Mora"),
+    url = "https://how-to-clean-data-quickly.netlify.app/#1",
+    image = "https://github.com/r4hr/r4hr_paworld_intro_dplyr/blob/main/Files/cover.png",
     image_alt = paste(
-      "Inttroducción a dplyr", 
-      "Desarrollada por el Club de R para RRHH"
+      "A quick introduction to cleaning data in R", 
+      "Developed by Sergio Garcia Mora"
     ),
     og_type = "website",
     og_author = "Sergio Garcia Mora",
     twitter_card_type = "summary_large_image",
     twitter_creator = "@sergiogarciamor",
-    twitter_site = "@club_rrhh"
+    twitter_site = "@data4hr"
   )
 ```
+---
+class: inverse, top, center
+background-image: url(Files/dataiq1.png)
+background-size: cover
+
+---
+---
+class: inverse, top, center
+background-image: url(Files/dataiq2.png)
+background-size: cover
+
+---
+
+class: inverse, top, center
+background-image: url(Files/dataiq3.png)
+background-size: cover
+
+---
+class: inverse, top, center
+background-image: url(Files/team.png)
+background-size: cover
+
+---
+# The Club de R para RRHH
+.left-column[
+
+<img src="Files/clubder.png" />
+]
+
+.right-column[
+The [Club de R para RRHH](https://linktr.ee/r4hrclub) is a community for learning to code in R for people who work in Human Resources or aspire to work in this field.
+
+We develop materials in Spanish, use HR data in our examples, and we learn how to use different packages, learn how to make predictive analysis, text mining and so on.
+
+This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more.
+]
+
+---
+class: inverse, middle, center
+## Let's get to work!
+
+<img src="https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif" width="60%"/>
+
+
+---
+# The R language
+## Projects
+
+Working with projects in RStudio makes everything simpler. RStudio Projects create a local folder in your computer in which every file, script, and resources will be saved there, in a more organized way.
+
+--
+
+To create a project go to:
+* *File*
+  * *New project*
+
+And then write the name of the new folder.
+
+.pull-left[<img src="Files/new_project.png" width="60%" />]
+
+
+.pull-rigt[<img src="Files/new_projecto.png" width="30%" />]
+
+---
+# What's a R package?
+
+R is a open source language, that became very popular for analyzing data and statistical analysis. Nowadays it has a wide range of aplications and uses beyond statistics.
+
+--
+
+*Packages* are a sort of 'extensions' that expand R base capabilities and allows us to make specific things in a easy way. Pablo Tiscornia made a great analogy to explain the difference what packages are.
+
+--
+
+.pull-left[
+<img src="Files/R2.png" width="85%" />
+]
+
+--
+.pull-right[
+<img src="Files/R4.png" />
+]
+
+---
