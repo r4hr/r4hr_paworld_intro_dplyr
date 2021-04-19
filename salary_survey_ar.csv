@@ -1,0 +1,465 @@
+gender;age;university_type;industry;company_size;company_type;hr_employees;role;team_managed;hr_experiencie_years;base_salary;satisfaction;looking_for_job
+Female;31;Private;Goverment;400;National;6;Administrative;0;8;41000;2;No but open to opportunities
+Female;28;Private;Food and Beverages;150;National;3;Administrative;0;9;40000;4;No but open to opportunities
+Male;25;Private;Mining;186;National;2;Administrative;0;2;43954,43;3;No but open to opportunities
+Female;33;Private;Consulting Services;4;National;1;Administrative;0;3;40000;3;Actively looking for a job
+Female;24;Private;Construction;80;National;1;Administrative;0;1;15000;2;Actively looking for a job
+Female;30;Private;Health;135;National;3;Administrative;0;6;57000;3;Actively looking for a job
+Female;39;Private;Techonology;15;National;1;Administrative;0;6;66700;4;Not looking for a job
+Female;23;Private;Food and Beverages;10000;National;40;Administrative;0;3;54506;3;No but open to opportunities
+Female;29;Private;Education;300;National;2;Administrative;0;5;21450;NA;NA
+Female;30;Private;Health;65;National;3;Administrative;0;6;50000;NA;NA
+Female;32;Private;Consulting Services;10000;Multinational;10;Administrative;4;5;94050;4;No but open to opportunities
+Female;28;Private;Consulting Services;120;Multinational;15;Administrative;0;8;42345;3;Actively looking for a job
+Female;25;Public;Transportation;22000;National;2;Administrative;0;2;22000;3;Actively looking for a job
+Female;24;Public;Retail;94;National;2;Administrative;0;1;30000;4;No but open to opportunities
+Female;24;Public;Retail;94;National;2;Administrative;0;1;30000;4;No but open to opportunities
+Female;33;Public;Health;117;National;2;Administrative;0;4;44840;1;No but open to opportunities
+Female;29;Public;Oil and Gas;225;Multinational;6;Administrative;0;5;65000;3;Actively looking for a job
+Male;46;Public;Construction;250;National;2;Administrative;0;18;65000;4;Not looking for a job
+Female;38;Public;Goverment;800;National;2;Administrative;0;6;37000;4;Not looking for a job
+Female;24;Public;Retail;94;National;2;Administrative;0;1;30000;4;No but open to opportunities
+Female;25;Public;Health;1900;National;11;Administrative;0;3;58000;3;No but open to opportunities
+Female;35;Public;Health;30;National;8;Administrative;0;2;2;1;Actively looking for a job
+Female;28;Public;Techonology;50;Multinational;5;Administrative;0;4;54000;3;No but open to opportunities
+Female;43;Public;Health;500;National;10;Administrative;0;0;68000;2;No but open to opportunities
+Female;38;Public;Other;10000;National;300;Administrative;0;5;34000;2;No but open to opportunities
+Female;35;Private;Retail;1433;National;10;Analyst;0;7;55700;3;No but open to opportunities
+Female;24;Private;Techonology;270;National;7;Analyst;0;2;47000;3;No but open to opportunities
+Female;36;Private;Other;170;Multinational;3;Analyst;0;12;100000;NA;NA
+Female;41;Private;Transportation;1000;National;8;Analyst;0;15;49000;3;Actively looking for a job
+Female;27;Private;Other;5350;Multinational;160;Analyst;0;3;218000;4;Not looking for a job
+Female;25;Private;Techonology;200;National;5;Analyst;0;5;29000;4;No but open to opportunities
+Female;28;Private;Techonology;300;National;6;Analyst;0;10;29400;3;Actively looking for a job
+Male;36;Private;Textile;450;Multinational;5;Analyst;0;10;35000;3;No but open to opportunities
+Female;33;Private;Other;50;Multinational;4;Analyst;0;4;30000;2;Actively looking for a job
+Female;28;Private;Construction;200;National;5;Analyst;0;5;60000;3;No but open to opportunities
+Male;35;Private;Construction;600;National;5;Analyst;0;15;75000;4;No but open to opportunities
+Female;31;Private;Oil and Gas;60000;Multinational;2500;Analyst;0;10;105000;4;No but open to opportunities
+Female;33;Private;Consulting Services;300;Multinational;3;Analyst;70;5;650000;5;No but open to opportunities
+Female;28;Private;Other;126;Multinational;4;Analyst;0;9;59000;3;Actively looking for a job
+Female;24;Private;TelCo;80;National;2;Analyst;0;2;38000;4;Actively looking for a job
+Female;25;Private;Health;44;National;1;Analyst;44;1;37000;3;Actively looking for a job
+Female;29;Private;Other;70;National;1;Analyst;0;7;39000;1;Actively looking for a job
+Female;34;Private;Techonology;23;National;1;Analyst;0;5;65000;4;Not looking for a job
+Female;30;Private;Other;66;National;1;Analyst;0;9;79000;NA;NA
+Male;29;Private;Banking and Finantial Services;5000;National;0;Analyst;0;0;90000;3;No but open to opportunities
+Female;29;Private;Techonology;90;National;3;Analyst;0;5;64000;NA;NA
+Female;32;Private;Health;270;National;9;Analyst;0;5;56000;2;Actively looking for a job
+Female;34;Private;Techonology;3500;Multinational;50;Analyst;0;8;76000;1;Actively looking for a job
+Female;23;Private;Education;1300;National;12;Analyst;0;3;62000;4;No but open to opportunities
+Female;27;Private;Consulting Services;3;National;2;Analyst;0;2;40000;4;No but open to opportunities
+Female;34;Private;Other;308;National;4;Analyst;0;8;93000;2;No but open to opportunities
+Male;34;Private;Other;265;Multinational;3;Analyst;0;12;79000;NA;NA
+Female;33;Private;Automotive;300;National;2;Analyst;0;5;55000;3;No but open to opportunities
+Female;33;Private;Automotive;300;National;2;Analyst;0;5;55000;3;No but open to opportunities
+Female;25;Private;Textile;83;National;2;Analyst;0;4;28000;2;Actively looking for a job
+Male;30;Private;Education;105;National;1;Analyst;0;4;40000;3;No but open to opportunities
+Male;34;Private;Consulting Services;250;Multinational;7;Analyst;2;2;65500;3;No but open to opportunities
+Female;40;Private;Farming;600;National;9;Analyst;0;7;60000;4;No but open to opportunities
+Female;39;Private;Health;300;National;5;Analyst;0;10;109000;3;Not looking for a job
+Male;24;Private;Hospitality;3500;Multinational;100;Analyst;0;1;90000;5;Not looking for a job
+Female;26;Private;Other;400;National;5;Analyst;0;7;39323;2;Actively looking for a job
+Female;36;Private;Retail;2500;Multinational;12;Analyst;0;16;76000;NA;NA
+Female;37;Private;Food and Beverages;136;National;2;Analyst;0;10;81500;4;No but open to opportunities
+Male;31;Private;Banking and Finantial Services;760;National;10;Analyst;0;10;96684.6;2;Actively looking for a job
+Female;21;Private;Techonology;360;Multinational;7;Analyst;0;2;66000;5;Not looking for a job
+Female;27;Private;Other;1100;Multinational;13;Analyst;120;2;45500;2;Actively looking for a job
+Female;28;Private;Food and Beverages;2400;Multinational;26;Analyst;0;5;69000;NA;NA
+Female;30;Private;Consulting Services;450;Multinational;55;Analyst;0;4;97000;4;No but open to opportunities
+Female;30;Private;Other;1300;National;20;Analyst;0;6;43000;3;Actively looking for a job
+Female;23;Private;Consulting Services;50;Multinational;10;Analyst;0;0;22500;NA;NA
+Male;31;Private;Hospitality;300;National;5;Analyst;0;6;70000;4;No but open to opportunities
+Female;25;Private;Transportation;63;National;4;Analyst;0;1.5;40000;2;Actively looking for a job
+Female;28;Private;Techonology;70;National;3;Analyst;0;5;60000;4;No but open to opportunities
+Female;30;Private;Other;350;National;7;Analyst;0;10;77000;4;No but open to opportunities
+Female;30;Private;Banking and Finantial Services;500;National;8;Analyst;0;7;45000;2;Actively looking for a job
+Male;31;Private;Transportation;450;National;4;Analyst;0;5;55000;NA;NA
+Male;29;Private;Banking and Finantial Services;3000;National;76;Analyst;0;5;68000;4;Not looking for a job
+Female;33;Private;Retail;3500;Multinational;17;Analyst;0;10;53346;NA;NA
+Female;26;Private;Health;8500;National;12;Analyst;0;1;43000;4;No but open to opportunities
+Female;30;Private;Techonology;190;Multinational;2;Analyst;0;4;58000;2;Actively looking for a job
+Male;24;Private;Other;100;National;3;Analyst;0;2;48000;3;No but open to opportunities
+Male;36;Private;Other;1200;National;7;Analyst;2;14;134000;4;Not looking for a job
+Female;30;Private;Other;1900;National;23;Analyst;0;5;100000;3;No but open to opportunities
+Female;36;Private;Food and Beverages;2000;Multinational;10;Analyst;0;10;12000;NA;NA
+Female;26;Private;Consulting Services;2500;Multinational;30;Analyst;0;3;79000;NA;NA
+Female;29;Private;Health;284;National;5;Analyst;0;6;78000;3;No but open to opportunities
+Female;25;Private;Techonology;120;National;5;Analyst;0;5;60375;2;No but open to opportunities
+Female;30;Private;Consulting Services;3500;Multinational;30;Analyst;1;3;55000;4;No but open to opportunities
+Female;29;Private;Banking and Finantial Services;1000;National;15;Analyst;0;7;95000;NA;NA
+Female;32;Private;Retail;80;National;2;Analyst;0;4;55000;4;Actively looking for a job
+Female;35;Private;Transportation;570;National;7;Analyst;0;1;37000;3;No but open to opportunities
+Female;31;Private;Retail;1500;National;16;Analyst;2;10;51000;2;Actively looking for a job
+Female;28;Private;Food and Beverages;5000;Multinational;20;Analyst;0;6;74000;5;Not looking for a job
+Female;35;Private;Food and Beverages;2000;National;18;Analyst;0;9;92740;5;No but open to opportunities
+Male;26;Private;Techonology;70;Multinational;5;Analyst;0;3;60000;NA;NA
+Female;22;Private;Techonology;100;National;5;Analyst;0;2;48998;3;Not looking for a job
+Female;22;Private;Techonology;80;National;5;Analyst;0;3;38500;4;No but open to opportunities
+Female;31;Private;Other;5000;Multinational;40;Analyst;0;8;50000;1;No but open to opportunities
+Female;27;Private;Health;150;National;3;Analyst;1;6;82215;NA;NA
+Female;26;Private;Other;1500;National;5;Analyst;0;3;42000;3;No but open to opportunities
+Male;41;Private;Techonology;2000;Multinational;20;Analyst;0;20;79000;3;Actively looking for a job
+Female;26;Public;Techonology;100;National;3;Analyst;0;5;73600;3;Actively looking for a job
+Male;31;Public;Techonology;1600;Multinational;25;Analyst;0;5;70000;5;Not looking for a job
+Female;26;Public;Hospitality;360;National;10;Analyst;0;3;65000;4;Actively looking for a job
+Female;24;Public;Techonology;180;National;5;Analyst;0;2;52000;4;Not looking for a job
+Female;36;Public;Retail;75;National;2;Analyst;3;10;71500;3;No but open to opportunities
+Female;31;Public;Other;3000;National;20;Analyst;0;5;60000;4;No but open to opportunities
+Female;28;Public;Other;350;National;5;Analyst;0;3;50282;4;No but open to opportunities
+Male;27;Public;Health;400;National;4;Analyst;0;5;55000;3;No but open to opportunities
+Female;29;Public;Techonology;250;Multinational;8;Analyst;0;5;80000;4;Not looking for a job
+Female;32;Public;Consulting Services;400;Multinational;8;Analyst;0;8;67000;4;Not looking for a job
+Female;30;Public;Techonology;120;National;3;Analyst;0;5;78000;4;Not looking for a job
+Female;40;Public;Other;100;National;2;Analyst;0;11;35000;3;No but open to opportunities
+Female;27;Public;Consulting Services;20;National;13;Analyst;0;2;20900;3;Actively looking for a job
+Female;30;Public;Construction;500;National;6;Analyst;0;9;90000;3;No but open to opportunities
+Male;33;Public;Oil and Gas;500;National;10;Analyst;0;8;70000;3;Not looking for a job
+Female;23;Public;Health;6500;National;60;Analyst;0;3;54000;3;Actively looking for a job
+Female;33;Public;Other;350;National;6;Analyst;0;6;39600;1;Actively looking for a job
+Male;36;Public;Techonology;4000;Multinational;90;Analyst;0;12;75000;NA;NA
+Female;26;Public;Other;800;National;4;Analyst;0;3;46900;2;Actively looking for a job
+Male;50;Public;Automotive;382;Multinational;6;Analyst;0;12;78000;5;Not looking for a job
+Male;34;Public;Transportation;4000;National;50;Analyst;0;9;85000;NA;NA
+Female;26;Public;Consulting Services;10000;Multinational;10;Analyst;0;4;67000;1;Actively looking for a job
+Female;24;Public;Consulting Services;200;National;6;Analyst;0;2;34086;4;Not looking for a job
+Male;27;Public;Oil and Gas;300;National;5;Analyst;0;5;70000;NA;NA
+Female;27;Public;Health;1000;National;12;Analyst;0;5;65000;3;No but open to opportunities
+Female;35;Public;Public Services;1400;National;40;Analyst;0;12;130000;3;No but open to opportunities
+Female;28;Public;Health;270;National;9;Analyst;0;3;51500;3;No but open to opportunities
+Male;35;Public;TelCo;1850;National;16;Analyst;0;4;58000;NA;NA
+Female;27;Public;Transportation;1600;Multinational;20;Analyst;0;2;60000;NA;NA
+Female;32;Public;Other;200;Multinational;4;Analyst;0;7;72500;4;No but open to opportunities
+Female;37;Public;Goverment;4000;National;50;Analyst;0;12;66000;3;No but open to opportunities
+Male;31;Public;Techonology;1600;Multinational;25;Analyst;0;5;70000;5;Not looking for a job
+Female;32;Public;Goverment;4000;National;3;Analyst;0;7;38;3;No but open to opportunities
+Male;30;Public;Techonology;14000;National;150;Analyst;0;7;110000;2;Actively looking for a job
+Female;32;Public;Banking and Finantial Services;230;National;4;Analyst;0;4;50600;3;No but open to opportunities
+Male;41;Public;Techonology;100;National;3;Analyst;0;14;48000;5;Not looking for a job
+Female;25;Public;Techonology;300;National;4;Analyst;0;2;37000;4;No but open to opportunities
+Female;40;Public;Other;50;National;5;Analyst;0;10;45000;2;Actively looking for a job
+Female;26;Public;Food and Beverages;1300;National;11;Analyst;0;1;37000;3;Actively looking for a job
+Female;27;Public;Automotive;300;National;4;Analyst;0;4;40700;3;No but open to opportunities
+Male;48;Public;Construction;235;Multinational;2;Analyst;0;20;110000;3;Actively looking for a job
+Female;30;Public;Other;250;National;114;Analyst;0;2;45000;3;No but open to opportunities
+Female;41;Public;Techonology;24000;National;300;Analyst;0;22;65000;NA;NA
+Female;36;Public;Banking and Finantial Services;900;National;13;Analyst;0;10;78000;NA;NA
+Female;29;Public;Consulting Services;650;Multinational;12;Analyst;0;6;59800;4;No but open to opportunities
+Male;30;Public;Transportation;500;National;4;Analyst;0;5;90000;4;No but open to opportunities
+Female;38;Public;TelCo;23000;National;200;Analyst;0;5;86400;3;No but open to opportunities
+Male;26;Public;Techonology;230;Multinational;9;Analyst;1;3;76046;NA;NA
+Female;26;Public;Consulting Services;10;National;3;Analyst;1;6;89156;4;No but open to opportunities
+Male;31;Public;Health;500;National;5;Analyst;0;8;52000;3;Actively looking for a job
+Female;32;Public;Goverment;7000;National;60;Analyst;0;0;60000;3;No but open to opportunities
+Male;30;Public;Media;40;National;1;Analyst;0;8;78600;3;Actively looking for a job
+Female;23;Public;Health;1100;National;22;Analyst;0;3;82170;2;Actively looking for a job
+Female;24;Public;Banking and Finantial Services;500;Multinational;21;Analyst;0;2;56000;4;No but open to opportunities
+Male;31;Public;Techonology;1600;Multinational;25;Analyst;0;5;70000;5;Not looking for a job
+Female;44;Public;Automotive;140;Multinational;3;Analyst;0;15;80000;3;Actively looking for a job
+Male;45;Public;Health;1300;National;7;Analyst;0;12;60600;4;No but open to opportunities
+Female;29;Public;Techonology;250;Multinational;15;Analyst;0;4;90100;4;Not looking for a job
+Female;32;Public;Other;1800;National;9;Analyst;0;5;40000;3;No but open to opportunities
+Female;33;Public;Techonology;6500;Multinational;200;Analyst;0;6;60200;4;Not looking for a job
+Male;43;Public;Banking and Finantial Services;1200;Multinational;9;Analyst;0;15;140000;1;No but open to opportunities
+Female;33;Public;Health;3000;National;24;Analyst;0;9;64497;3;No but open to opportunities
+Female;32;Public;TelCo;175;National;5;Analyst;1;10;97700;3;No but open to opportunities
+Female;38;Public;Consulting Services;700;National;700;Analyst;0;10;75000;NA;NA
+Female;34;Public;Other;100;National;2;Analyst;0;10;85000;1;Actively looking for a job
+Male;25;Public;Other;700;National;10;Analyst;0;6;60000;3;No but open to opportunities
+Female;26;Public;Consulting Services;300;Multinational;6;Analyst;2;3;57000;3;No but open to opportunities
+Female;26;Public;Other;4000;National;12;Analyst;0;1;30000;1;Actively looking for a job
+Female;30;Public;Techonology;100;National;7;Analyst;0;6;70000;4;Not looking for a job
+Male;33;Public;Goverment;360;National;11;Analyst;1;11;115000;3;No but open to opportunities
+Male;25;Public;Consulting Services;10000;Multinational;400;Analyst;0;2;52500;2;No but open to opportunities
+Male;22;Public;Public Services;4800;National;100;Analyst;0;1;56000;4;No but open to opportunities
+Female;24;Public;Techonology;300;Multinational;12;Analyst;0;3;49000;3;No but open to opportunities
+Female;22;Public;Health;2000;National;19;Analyst;0;3;70000;3;No but open to opportunities
+Female;27;Public;Health;900;National;7;Analyst;0;1;40000;2;Actively looking for a job
+Female;31;Public;Education;1500;National;12;Analyst;0;9;90000;3;No but open to opportunities
+Male;28;Public;Techonology;6000;National;40;Analyst;0;2;48000;2;Actively looking for a job
+Female;29;Public;Goverment;50000;National;160;Analyst;0;4;58770;3;No but open to opportunities
+Female;33;Public;Techonology;16;National;1;Analyst;0;3;30250;3;No but open to opportunities
+Female;47;Public;Other;650;National;5;Analyst;0;15;55000;NA;NA
+Female;28;Public;Construction;200;National;2;Analyst;0;4;52000;3;Actively looking for a job
+Male;32;Public;Consulting Services;4000;Multinational;3;Analyst;0;6;125000;2;No but open to opportunities
+Female;31;Public;Consulting Services;10000;National;50;Analyst;0;11;52000;5;Actively looking for a job
+Female;25;Public;Retail;2000;Multinational;40;Analyst;0;5;54000;NA;NA
+Female;26;Public;Oil and Gas;3000;Multinational;500;Analyst;0;3;80000;4;Not looking for a job
+Female;30;Public;Banking and Finantial Services;270;Multinational;4;Analyst;0;5;90000;5;No but open to opportunities
+Female;24;Public;Banking and Finantial Services;300;National;4;Analyst;0;2;75000;3;No but open to opportunities
+Female;38;Public;Transportation;1000;Multinational;15;Analyst;0;12;90000;3;No but open to opportunities
+Female;33;Public;Other;350;National;6;Analyst;0;6;52000;1;Actively looking for a job
+Female;48;Public;Techonology;9;Multinational;2;Analyst;0;30;49000;NA;NA
+Female;35;Public;Techonology;230;National;4;Analyst;0;12;40000;3;Actively looking for a job
+Female;40;Public;Retail;100;Multinational;1;Supervisor;100;8;83000;5;No but open to opportunities
+Male;39;Private;Other;200;Multinational;4;Supervisor;0;15;120000;5;No but open to opportunities
+Male;29;Private;Goverment;520;National;7;CHRO;7;6;60000;2;Actively looking for a job
+Female;30;Private;Goverment;508;National;6;CHRO;4;3;15000;4;No but open to opportunities
+Female;28;Private;Goverment;1400;National;20;CHRO;20;3;128000;3;No but open to opportunities
+Female;34;Private;Techonology;300;Multinational;17;CHRO;7;14;288000;4;No but open to opportunities
+Male;29;Private;Goverment;520;National;7;CHRO;7;6;60000;2;Actively looking for a job
+Female;32;Private;Media;40;National;1;CHRO;0;10;157500;5;Not looking for a job
+Male;47;Private;Techonology;200;National;5;CHRO;4;28;250000;3;No but open to opportunities
+Female;39;Private;Health;200;National;8;CHRO;7;15;115000;4;No but open to opportunities
+Female;40;Public;Education;250;Multinational;3;CHRO;2;15;350000;NA;NA
+Female;40;Public;Education;250;Multinational;3;CHRO;2;15;350000;NA;NA
+Female;40;Public;Education;250;Multinational;3;CHRO;2;15;350000;NA;NA
+Female;50;Public;Other;300;National;3;CHRO;3;15;360000;3;No but open to opportunities
+Male;37;Public;Automotive;1200;Multinational;12;CHRO;5;15;338000;4;No but open to opportunities
+Female;33;Public;Goverment;6500;National;62;CHRO;9;8;129528;3;No but open to opportunities
+Male;25;Private;Retail;30;National;1;Supervisor;0;2;48000;3;Not looking for a job
+Male;37;Private;Other;115;National;1;Supervisor;0;11;80000;4;No but open to opportunities
+Female;40;Public;Techonology;70;National;3;HRBP;0;10;82000;3;No but open to opportunities
+Female;35;Private;Other;250;National;5;Analyst;0;9;60000;3;Actively looking for a job
+Male;49;Private;Banking and Finantial Services;110;National;2;Manager;1;20;250000;5;No but open to opportunities
+Female;39;Private;Consulting Services;10;National;5;Manager;9;10;150000;5;Not looking for a job
+Male;39;Private;Farming;320;National;5;Manager;10;10;230000;NA;NA
+Female;26;Private;Health;556;National;3;Manager;2;4;80000;NA;NA
+Female;43;Private;Food and Beverages;450;National;4;Manager;10;15;225000;3;No but open to opportunities
+Female;47;Private;Health;460;National;4;Manager;3;12;190000;3;No but open to opportunities
+Male;35;Private;Other;3000;Multinational;90;Manager;6;14;140000;NA;NA
+Female;44;Private;Chemical Industry;122;Multinational;3;Manager;0;20;290000;5;No but open to opportunities
+Female;34;Private;Media;170;Multinational;5;Manager;3;9;185000;4;No but open to opportunities
+Male;54;Private;Retail;870;National;10;Manager;10;30;150000;4;No but open to opportunities
+Female;40;Private;Retail;200;National;3;Manager;1;121;135000;3;Actively looking for a job
+Male;52;Private;Oil and Gas;3000;Multinational;65;Manager;26;25;250;NA;NA
+Male;36;Private;Banking and Finantial Services;75;National;3;Manager;4;12;147000;1;Actively looking for a job
+Male;42;Private;Chemical Industry;138;Multinational;5;Manager;5;18;201300;4;No but open to opportunities
+Male;34;Private;Techonology;2700;Multinational;100;Manager;3;13;221000;NA;NA
+Female;31;Private;Goverment;180;National;3;Manager;80;7;110600;NA;NA
+Female;47;Private;Health;30;National;1;Manager;10;20;78000;3;Actively looking for a job
+Male;40;Private;Construction;1700;National;8;Manager;2;15;325000;3;No but open to opportunities
+Male;53;Private;Public Services;1350;Multinational;14;Manager;13;33;316000;3;No but open to opportunities
+Female;43;Private;Automotive;220;National;3;Manager;3;25;290000;4;Actively looking for a job
+Female;31;Private;Techonology;86;National;2;Manager;1;2;170000;4;No but open to opportunities
+Female;32;Public;Hospitality;700;National;4;Manager;3;10;86747;5;Not looking for a job
+Male;40;Public;Food and Beverages;120;National;2;Manager;6;13;245000;5;Not looking for a job
+Female;28;Public;Other;250;National;2;Manager;1;12;140000;5;Not looking for a job
+Male;45;Public;Other;600;National;5;Manager;4;15;250000;NA;NA
+Male;43;Public;Consulting Services;350;Multinational;7;Manager;10;10;140000;4;No but open to opportunities
+Female;47;Public;Other;200;National;2;Manager;8;10;148000;4;No but open to opportunities
+Male;49;Public;Health;15000;National;350;Manager;14;18;145000;NA;NA
+Male;48;Public;Health;1000;National;10;Manager;10;18;200000;4;No but open to opportunities
+Female;42;Public;Automotive;90;National;8;Manager;10;20;160000;NA;NA
+Female;38;Public;Techonology;200;National;4;Manager;5;15;186000;NA;NA
+Female;33;Public;Retail;312;National;4;Manager;2;7;147000;4;No but open to opportunities
+Male;49;Public;TelCo;30;Multinational;1;Manager;0;30;2140000;4;No but open to opportunities
+Female;42;Public;Retail;320;National;5;Manager;4;16;180000;4;Not looking for a job
+Male;37;Public;Transportation;90;National;2;Manager;1;15;125000;NA;NA
+Male;37;Public;Techonology;750;Multinational;24;Manager;0;14;165000;4;No but open to opportunities
+Male;33;Public;Techonology;1100;Multinational;20;Manager;7;10;232000;3;No but open to opportunities
+Male;38;Public;Techonology;200;National;5;Manager;6;12;240000;4;No but open to opportunities
+Female;38;Public;Techonology;40;Multinational;1;Manager;0;10;194000;3;No but open to opportunities
+Male;32;Private;Food and Beverages;7500;Multinational;25;HRBP;0;14;85500;2;Actively looking for a job
+Female;34;Private;Mining;500;Multinational;10;HRBP;0;12;85000;2;Actively looking for a job
+Male;26;Private;Automotive;800;Multinational;11;HRBP;0;5;90000;5;No but open to opportunities
+Female;36;Private;Health;1200;National;18;HRBP;800;10;100000;1;Actively looking for a job
+Male;26;Private;Techonology;44;National;3;HRBP;1;2;84000;5;No but open to opportunities
+Female;34;Private;Mining;500;Multinational;10;HRBP;0;12;85000;2;Actively looking for a job
+Female;26;Private;Consulting Services;200;Multinational;3;HRBP;2;8;101000;2;No but open to opportunities
+Male;27;Private;Education;2000;National;15;HRBP;0;6;75000;NA;NA
+Female;26;Private;Consulting Services;200;Multinational;3;HRBP;2;8;101000;2;No but open to opportunities
+Female;38;Private;Public Services;1700;National;25;HRBP;0;17;150000;3;No but open to opportunities
+Male;34;Private;Health;2500;National;30;HRBP;0;3;180000;4;No but open to opportunities
+Female;34;Private;Consulting Services;15;National;1;HRBP;0;6;47;1;Actively looking for a job
+Female;35;Private;Techonology;750;National;10;HRBP;0;11;120000;3;Actively looking for a job
+Male;34;Private;Health;2500;National;30;HRBP;0;3;180000;4;No but open to opportunities
+Male;27;Private;Education;2000;National;15;HRBP;0;6;75000;NA;NA
+Female;35;Private;Other;23000;Multinational;8;HRBP;0;7;10700;NA;NA
+Male;37;Private;Consulting Services;4000;Multinational;50;HRBP;7;15;55000;2;Actively looking for a job
+Male;31;Private;Techonology;65;National;2;HRBP;0;6;90000;5;Not looking for a job
+Male;33;Public;Other;6000;Multinational;55;HRBP;8;8;55000;5;No but open to opportunities
+Male;29;Public;Media;700;Multinational;9;HRBP;2;5;80000;4;No but open to opportunities
+Male;33;Public;Textile;450;National;7;HRBP;0;9;65662;3;No but open to opportunities
+Female;31;Public;Chemical Industry;10;Multinational;1;HRBP;0;5;60565;3;No but open to opportunities
+Female;25;Public;Education;900;National;7;HRBP;0;4;56600;4;Not looking for a job
+Male;30;Public;TelCo;5000;National;90;HRBP;0;7;81000;3;No but open to opportunities
+Female;29;Public;Techonology;15000;Multinational;130;HRBP;1;8;130000;4;No but open to opportunities
+Male;32;Public;Automotive;500;Multinational;5;HRBP;0;10;110000;4;No but open to opportunities
+Female;28;Public;Techonology;70;Multinational;2;HRBP;0;2;57000;4;Actively looking for a job
+Female;31;Public;Other;370;National;3;HRBP;1;7;105000;3;Actively looking for a job
+Female;40;Public;Other;2400;National;8;HRBP;5;8;50000;3;Actively looking for a job
+Male;30;Public;Automotive;1000;Multinational;15;HRBP;0;7;85000;5;No but open to opportunities
+Male;29;Public;Techonology;400;National;6;HRBP;0;6;60000;NA;NA
+Male;30;Public;Techonology;2500;Multinational;20;HRBP;0;6;156000;4;No but open to opportunities
+Female;30;Public;Health;30;Multinational;10;HRBP;1;7;71000;3;No but open to opportunities
+Female;28;Public;Other;800;National;8;HRBP;0;7;72250;3;Actively looking for a job
+Male;33;Public;Techonology;4000;Multinational;120;HRBP;0;10;150000;3;No but open to opportunities
+Male;28;Public;Techonology;40;National;2;HRBP;0;1;55000;4;Not looking for a job
+Male;38;Public;Banking and Finantial Services;60;National;1;HRBP;0;16;220000;NA;NA
+Female;31;Public;Other;500;Multinational;15;HRBP;0;11;205000;3;Actively looking for a job
+Female;23;Public;Consulting Services;20;National;18;HRBP;0;0;30000;3;Not looking for a job
+Female;38;Public;Other;408;Multinational;6;HRBP;0;15;131000;3;Actively looking for a job
+Female;33;Public;Other;44000;Multinational;10;HRBP;0;9;106000;2;Actively looking for a job
+Male;28;Public;Food and Beverages;1100;National;9;HRBP;0;4;130000;3;Actively looking for a job
+Female;34;Public;Food and Beverages;350;National;5;HRBP;0;4;85500;4;Not looking for a job
+Male;33;Private;Education;80;National;1;Head;3;4;30900;3;No but open to opportunities
+Female;29;Private;Banking and Finantial Services;125;National;3;Head;2;10;162000;5;Not looking for a job
+Female;36;Private;Textile;270;Multinational;2;Head;1;10;93000;3;No but open to opportunities
+Female;26;Private;Health;7;National;1;Head;5;1;36500;5;No but open to opportunities
+Female;35;Private;Health;250;National;3;Head;2;13;178000;NA;NA
+Male;40;Private;Food and Beverages;600;National;3;Head;2;12;85000;3;Actively looking for a job
+Female;45;Private;Retail;135;Multinational;2;Head;1;15;61697;3;Actively looking for a job
+Female;36;Private;Retail;134;National;1;Head;0;11;75000;3;Actively looking for a job
+Female;34;Private;Other;250;National;4;Head;3;18;75000;4;No but open to opportunities
+Female;51;Private;Food and Beverages;600;National;7;Head;7;20;150000;1;Actively looking for a job
+Female;63;Private;Other;80;National;2;Head;1;24;96000;1;Actively looking for a job
+Male;33;Private;Other;2800;Multinational;20;Head;7;10;127000;3;Actively looking for a job
+Female;30;Private;Food and Beverages;6000;Multinational;100;Head;0;5;120000;NA;NA
+Male;31;Private;Food and Beverages;13000;National;100;Head;0;12;182000;NA;NA
+Male;33;Private;Health;1950;National;33;Head;4;11;145000;5;No but open to opportunities
+Female;63;Private;Other;80;National;2;Head;1;24;96000;1;Actively looking for a job
+Female;36;Private;Other;115;National;1;Head;0;4;100000;1;Actively looking for a job
+Male;58;Private;Other;70;National;1;Head;0;30;75610;1;Actively looking for a job
+Male;44;Private;Oil and Gas;490;Multinational;8;Head;0;19;256000;5;No but open to opportunities
+Male;38;Private;Health;400;National;4;Head;2;14;89000;5;Not looking for a job
+Male;39;Private;Health;190;National;2;Head;1;15;160000;3;No but open to opportunities
+Female;32;Private;Consulting Services;200;National;22;Head;2;8;44000;1;Actively looking for a job
+Male;42;Private;Hospitality;300;National;3;Head;2;15;120000;4;Not looking for a job
+Female;40;Private;Public Services;450;Multinational;15;Head;4;18;220000;3;No but open to opportunities
+Female;33;Private;Techonology;130;National;2;Head;1;7;60250;3;Actively looking for a job
+Female;39;Private;Textile;122;National;2;Head;5;17;70000;3;No but open to opportunities
+Female;54;Private;Automotive;100;National;2;Head;1;35;73000;3;No but open to opportunities
+Female;33;Private;Health;50;National;3;Head;35;5;72000;4;No but open to opportunities
+Female;37;Public;Hospitality;450;National;5;Head;4;12;73000;4;No but open to opportunities
+Male;33;Public;Mining;15;National;1;Head;0;7;190000;4;No but open to opportunities
+Female;35;Public;Mining;150;National;2;Head;5;8;70800;3;Actively looking for a job
+Female;36;Public;Construction;120;National;1;Head;0;14;100000;3;Actively looking for a job
+Female;36;Public;Retail;65;Multinational;1;Head;65;12;68000;2;Actively looking for a job
+Female;38;Public;Farming;352;National;6;Head;5;12;105000;4;No but open to opportunities
+Female;29;Public;Health;800;National;3;Head;2;9;106024;4;No but open to opportunities
+Female;37;Public;Food and Beverages;1700;Multinational;25;Head;3;18;107000;NA;NA
+Male;29;Public;Goverment;25000;National;50;Head;2;6;92000;4;No but open to opportunities
+Male;40;Public;Construction;322;National;7;Head;6;15;89800;3;Actively looking for a job
+Female;22;Public;Techonology;100;National;2;Head;95;3;45000;3;No but open to opportunities
+Male;47;Public;TelCo;4000;Multinational;35;Head;20;0;130000;4;No but open to opportunities
+Male;30;Public;Transportation;5500;National;75;Head;4;7;82500;3;No but open to opportunities
+Male;32;Public;Other;170;National;15;Head;3;8;185000;4;No but open to opportunities
+Male;37;Public;Transportation;95;National;3;Head;2;12;181000;2;No but open to opportunities
+Female;39;Public;Chemical Industry;200;National;2;Head;0;15;140000;4;Not looking for a job
+Male;25;Public;Health;80;National;1;Head;2;2;55000;4;No but open to opportunities
+Male;33;Public;Oil and Gas;5500;National;210;Head;6;5;270000;4;No but open to opportunities
+Female;34;Public;Health;150;National;2;Head;1;14;118000;1;Actively looking for a job
+Male;31;Public;Techonology;635;National;7;Head;1;15;200;2;Actively looking for a job
+Female;50;Public;Transportation;10000;National;120;Head;5;20;115000;4;No but open to opportunities
+Female;50;Public;Transportation;10000;National;120;Head;5;20;115000;4;No but open to opportunities
+Male;33;Public;Construction;3000;National;10;Head;1;10;103000;NA;NA
+Male;36;Public;Food and Beverages;300;Multinational;3;Head;2;10;106000;4;Not looking for a job
+Male;53;Public;Other;50;Multinational;0;Head;0;0;60000;3;No but open to opportunities
+Female;45;Public;Food and Beverages;2500;National;30;Head;3;20;113000;4;Not looking for a job
+Female;46;Public;Other;1000;National;7;Head;5;15;94389;4;No but open to opportunities
+Female;41;Public;Mining;600;Multinational;10;Head;6;13;160000;4;No but open to opportunities
+Female;52;Public;Other;30;National;1;Head;0;30;120000;NA;NA
+Female;33;Public;Goverment;200;National;5;Head;1;12;111000;3;No but open to opportunities
+Female;43;Public;Textile;200;National;2;Head;1;21;160000;4;No but open to opportunities
+Female;31;Private;Techonology;80;Multinational;5;Analyst;0;3;56000;2;No but open to opportunities
+Female;46;Public;Consulting Services;65;National;3;HRBP;0;20;74200;3;Actively looking for a job
+Female;34;Private;Farming;65;National;1;Supervisor;1;2;55000;4;No but open to opportunities
+Female;38;Private;Retail;110;National;2;Supervisor;0;20;40000;3;Actively looking for a job
+Female;27;Private;Public Services;143;National;2;Supervisor;1;5;54000;3;Actively looking for a job
+Female;29;Private;Banking and Finantial Services;250;National;3;Supervisor;2;8;62000;2;Actively looking for a job
+Female;31;Private;Retail;46;National;1;Supervisor;0;8;50000;3;No but open to opportunities
+Male;40;Private;Oil and Gas;200;National;7;Supervisor;2;14;140000;3;No but open to opportunities
+Female;34;Private;Consulting Services;3000;National;3;Supervisor;50;8;45000;NA;NA
+Female;23;Private;Health;500;National;4;Supervisor;2;2;62000;5;Not looking for a job
+Female;43;Private;Retail;85;National;2;Supervisor;1;10;75000;3;Actively looking for a job
+Male;49;Private;Transportation;215;National;1;Supervisor;0;10;84000;5;No but open to opportunities
+Male;38;Private;Retail;86;National;1;Supervisor;80;12;38500;3;Actively looking for a job
+Female;28;Private;Retail;30;National;1;Supervisor;0;2;22000;2;Actively looking for a job
+Female;41;Private;Textile;300;Multinational;3;Supervisor;0;15;63000;NA;NA
+Female;27;Private;Food and Beverages;57;Multinational;1;Supervisor;0;4;73000;3;No but open to opportunities
+Female;34;Private;Retail;120;Multinational;1;Supervisor;0;11;81000;4;No but open to opportunities
+Female;26;Private;Farming;80;National;1;Supervisor;0;4;51282;3;Actively looking for a job
+Female;35;Private;Techonology;50;National;1;Supervisor;0;7;120000;5;Not looking for a job
+Female;34;Private;Retail;120;Multinational;1;Supervisor;0;11;81000;4;No but open to opportunities
+Female;31;Private;Construction;70;National;2;Supervisor;1;7;50000;NA;NA
+Female;30;Private;Techonology;24;National;3;Supervisor;0;5;70000;4;No but open to opportunities
+Female;27;Private;Food and Beverages;57;Multinational;1;Supervisor;0;4;73000;3;No but open to opportunities
+Male;35;Private;Media;700;National;7;Supervisor;0;10;102000;3;No but open to opportunities
+Female;39;Private;Retail;350;National;2;Supervisor;1;2;85000;NA;NA
+Female;34;Private;Hospitality;45;National;1;Supervisor;0;9;70000;2;Actively looking for a job
+Female;39;Private;Health;55;National;1;Supervisor;0;3;87000;3;No but open to opportunities
+Female;28;Private;Retail;30;National;1;Supervisor;0;2;22000;2;Actively looking for a job
+Female;24;Private;Oil and Gas;10;National;1;Supervisor;0;4;48000;NA;NA
+Male;33;Private;Other;120;Multinational;1;Supervisor;0;6;72000;NA;NA
+Male;45;Private;Other;500;National;5;Supervisor;0;5;75000;4;No but open to opportunities
+Female;40;Private;Consulting Services;190;National;6;Supervisor;1;14;110000;4;No but open to opportunities
+Female;45;Private;Other;3500;Multinational;10;Supervisor;0;25;71000;3;Actively looking for a job
+Male;33;Private;Other;120;Multinational;1;Supervisor;0;6;72000;NA;NA
+Female;39;Private;Hospitality;350;National;3;Supervisor;0;6;51100;2;No but open to opportunities
+Male;29;Private;Goverment;4000;National;35;Supervisor;0;8;62700;2;Actively looking for a job
+Female;40;Private;Consulting Services;16;National;16;Supervisor;0;15;150000;NA;NA
+Male;40;Private;Food and Beverages;100;National;1;Supervisor;0;8;75000;4;Actively looking for a job
+Female;40;Private;Hospitality;28;Multinational;1;Supervisor;0;16;86000;4;No but open to opportunities
+Male;44;Private;Education;150;National;4;Supervisor;3;10;85000;4;No but open to opportunities
+Female;28;Private;Retail;150;National;4;Supervisor;3;4;40009;2;Actively looking for a job
+Female;33;Private;Goverment;1900;National;60;Supervisor;2;6;79000;4;No but open to opportunities
+Female;36;Private;Retail;3000;Multinational;15;Supervisor;4;8;88000;3;No but open to opportunities
+Male;26;Private;Health;25;National;1;Supervisor;0;3;80000;3;Actively looking for a job
+Female;25;Private;Hospitality;56;National;1;Supervisor;0;6;31000;3;No but open to opportunities
+Female;35;Private;Retail;50;National;1;Supervisor;0;10;30000;3;Actively looking for a job
+Female;30;Private;Retail;600;National;7;Supervisor;0;5;88020;3;No but open to opportunities
+Female;27;Private;Other;60;National;1;Supervisor;0;4;44000;3;No but open to opportunities
+Female;45;Private;Consulting Services;95;National;2;Supervisor;2;12;80000;4;No but open to opportunities
+Female;30;Private;Other;25;National;1;Supervisor;0;5;60000;NA;NA
+Male;42;Private;Banking and Finantial Services;250;National;7;Supervisor;0;15;135000;4;No but open to opportunities
+Female;32;Private;Food and Beverages;400;National;2;Supervisor;1;12;68064;3;Actively looking for a job
+Female;37;Private;Farming;35;National;1;Supervisor;0;2;35000;5;No but open to opportunities
+Female;36;Private;Textile;350;National;2;Supervisor;0;7;40000;NA;NA
+Female;30;Public;Techonology;92;National;2;Supervisor;1;4;98948;NA;NA
+Male;37;Public;Banking and Finantial Services;150;Multinational;3;Supervisor;0;13;142000;2;No but open to opportunities
+Male;27;Public;Goverment;100;National;4;Supervisor;50;3;35000;4;No but open to opportunities
+Female;30;Public;Automotive;45;National;1;Supervisor;1;5;69500;2;Actively looking for a job
+Female;33;Public;Techonology;20;National;1;Supervisor;0;10;95000;5;Not looking for a job
+Female;36;Public;TelCo;400;National;6;Supervisor;2;13;120000;4;Actively looking for a job
+Female;42;Public;Textile;30;National;1;Supervisor;0;17;32000;2;Actively looking for a job
+Female;35;Public;Consulting Services;15;National;2;Supervisor;0;1;34000;5;No but open to opportunities
+Male;30;Public;Transportation;150;National;4;Supervisor;3;2;66266;3;Actively looking for a job
+Female;30;Public;Techonology;92;National;2;Supervisor;1;4;98948;NA;NA
+Female;45;Public;Public Services;326;National;5;Supervisor;0;12;73000;1;Actively looking for a job
+Male;52;Public;Goverment;60000;National;0;Supervisor;0;0;54000;NA;NA
+Female;29;Public;Retail;150;National;1;Supervisor;0;2;40000;3;No but open to opportunities
+Female;38;Public;Other;180;National;6;Supervisor;1;7;40000;4;Actively looking for a job
+Female;38;Public;Construction;137;National;2;Supervisor;1;14;118000;2;Actively looking for a job
+Female;35;Public;Retail;100;National;1;Supervisor;0;13;50000;NA;NA
+Female;48;Public;Health;30;National;1;Supervisor;0;15;60000;3;Actively looking for a job
+Female;44;Public;Construction;20;National;1;Supervisor;0;12;61000;1;Actively looking for a job
+Female;34;Public;Goverment;200;National;10;Supervisor;1;10;52000;4;Not looking for a job
+Male;40;Public;Automotive;600;National;5;Supervisor;0;15;75000;3;No but open to opportunities
+Female;32;Public;Chemical Industry;28;National;1;Supervisor;0;8;75000;3;No but open to opportunities
+Female;27;Public;Techonology;100;National;3;Supervisor;0;3;72000;NA;NA
+Female;26;Public;Techonology;20;National;2;Supervisor;1;4;80360;5;Not looking for a job
+Male;40;Public;Food and Beverages;520;National;7;Supervisor;2;15;109000;4;No but open to opportunities
+Female;28;Public;Banking and Finantial Services;25;National;1;Supervisor;0;5;50600;3;No but open to opportunities
+Male;47;Public;Other;5000;National;60;Supervisor;12;28;150000;1;Actively looking for a job
+Male;38;Public;Techonology;70;National;3;Supervisor;1;15;112000;3;No but open to opportunities
+Male;47;Public;Techonology;300;Multinational;10;Supervisor;4;24;130000;2;Actively looking for a job
+Female;31;Public;Consulting Services;86;Multinational;8;Supervisor;0;4;74000;NA;NA
+Male;36;Public;Other;150;National;3;Supervisor;1;8;120000;NA;NA
+Female;29;Public;Consulting Services;460;Multinational;4;Supervisor;0;8;96300;5;No but open to opportunities
+Male;30;Public;Farming;350;National;3;Supervisor;0;7;75000;4;Actively looking for a job
+Male;29;Public;Construction;350;National;6;Supervisor;1;4;70500;2;Actively looking for a job
+Male;38;Public;Other;130;National;2;Supervisor;0;11;102000;4;No but open to opportunities
+Female;27;Public;Construction;450;National;3;Supervisor;0;3;45800;4;No but open to opportunities
+Female;31;Public;Other;65;National;1;Supervisor;0;2;49000;3;No but open to opportunities
+Female;41;Public;Health;44;National;1;Supervisor;44;4;78000;2;No but open to opportunities
+Female;31;Public;Other;65;National;1;Supervisor;0;2;49000;3;No but open to opportunities
+Female;31;Public;Other;65;National;1;Supervisor;0;2;49000;3;No but open to opportunities
+Female;34;Public;Retail;64;National;2;Supervisor;3;6.5;87136;3;No but open to opportunities
+Male;37;Public;Health;1000;National;7;Supervisor;0;17;130000;3;No but open to opportunities
+Female;29;Public;Retail;500;National;7;Supervisor;0;9;60000;3;Actively looking for a job
+Female;26;Private;Techonology;170;National;4;Analyst;2;3;54200;3;No but open to opportunities
+Female;31;Private;Consulting Services;3400;Multinational;16;Analyst;4;4;67000;3;No but open to opportunities
+Male;28;Public;Consulting Services;3000;Multinational;20;HRBP;2;2;84000;NA;NA
+Female;39;Private;Construction;50;National;2;Supervisor;1;14;30000;3;No but open to opportunities
+Female;27;Private;Construction;80;National;1;Supervisor;0;2;50000;3;Actively looking for a job
+Female;31;Private;Oil and Gas;75000;Multinational;1500;Supervisor;0;7;150000;4;No but open to opportunities
+Female;34;Private;Health;10000;National;150;Supervisor;5;10;123000;4;No but open to opportunities
+Female;44;Private;Education;5000;National;800;Supervisor;0;3;55000;3;No but open to opportunities
+Male;34;Private;Techonology;700;Multinational;60;Supervisor;2;8;105000;NA;NA
+Female;38;Private;Food and Beverages;51;Multinational;2;Supervisor;1;15;98500;5;Not looking for a job
+Female;35;Public;Farming;1600;National;11;Supervisor;2;9;103000;4;Actively looking for a job
+Male;29;Public;Chemical Industry;460;National;5;Supervisor;0;10;116000;1;Actively looking for a job
+Female;26;Public;Consulting Services;22;National;3;Supervisor;2;6;60000;4;No but open to opportunities
+Male;37;Public;Goverment;500;National;15;Supervisor;5;15;150;NA;NA
+Female;37;Public;Automotive;400;Multinational;6;Supervisor;4;13;140000;3;Actively looking for a job

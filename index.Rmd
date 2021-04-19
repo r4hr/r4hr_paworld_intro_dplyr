@@ -180,3 +180,99 @@ Once the package is installed, we need to load or "activate" the package in orde
 library(tidyverse)
 ```
 
+---
+## dplyr
+
+.left-column[
+<img src="https://i.redd.it/w2km14a81yy41.png" />
+]
+
+.right-column[
+**dplyr** is the main package of the *tidyverse* collection for *data wrangling*.
+
+One of the reasons it became so popular is that its functions emulates our colloquial way to approach a problem.
+
+Another important factor is that the function names are straight forward to comprehend what they do, and the logic and parameters in most of them are very similar.
+
+That means when you understand the basics of one function you get an idea of how they all work.
+]
+
+---
+## dplyr, an example
+
+Let's take a look into a dplyr's sequence:
+
+Let's say you have a salary survey and you want to know the mean salary for HR positions. Can you tell me the steps of this script?:
+
+--
+
+```{r eval=FALSE}
+hr_data %>%                               # Call the dataframe
+  select(position, salary) %>%            # Picks columns to analyse
+  filter(salary < 500000) %>%             # Filter salaries below $ 500.000
+  group_by(position) %>%                  # Groups the results by position
+  summarise(mean_salary = mean(salary))   # Calculate mean salary for position
+```
+
+
+
+
+---
+## The 'pipe' operator
+
+.left-column[
+<img src="https://magrittr.tidyverse.org/logo.png" />
+]
+
+.right-column[
+Did you see this symbol `%>%` in the previous slide? This symbol is known as the **'pipe'** and allows you to write functions as a sequence, making it easier to read and understand the script. This is particularly useful when you're concatenating several steps of functions in your analysis.
+]
+.right-column[
+Let's imagine you want to get a list of HRBP's salaries per industry, organized from highest salary, to the lowest. 
+]
+
+--
+.right-column[**Steps:**
+
+1. Load data, and select `role`, `base_salary` and `industry`variables.
+2. Filter by `role == "HRBP"`
+3. Arrange results descendently by `base_salary`.
+]
+---
+## The 'pipe' operator
+
+This is how the codes looks like
+
+```{r, echo= TRUE, eval=FALSE}
+# Code WITHOUT the pipe operator
+arrange(filter(select(salaries, role, base_salary, industry), role == "HRBP"), desc(base_salary))
+```
+
+--
+
+```{r, echo= TRUE, eval=FALSE}
+# Code WITH the pipe operator
+salaries %>% 
+  select(role, base_salary, industry) %>% 
+  filter(role == "HRBP") %>% 
+  arrange(desc(base_salary))
+```
+
+---
+class: inverse, middle, center
+# Let's get to know our data
+
+---
+# `r emo::ji("kiwi")` KIWI: Key Investigation of Wages & Income
+## aka HR Salary Survey from Argentina
+
+Last year, with the *Club de R para RRHH* conducted a salary survey across Latin America to know salaries and some other things that we were interested on.
+
+The other reason why we did this survey is because the lack of datasets in Spanish to practice.
+
+In this workshop we'll use a sample of this dataset using data from Argentina. You can see and download the R script a full version of the analysis [in this link](https://rpubs.com/Data4HR/encuesta-kiwi-2020).
+
+---
+# The KIWI data
+
+First, we need to load the `tidyverse` package and use a function from the `readr` package to
