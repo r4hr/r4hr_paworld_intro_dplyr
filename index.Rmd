@@ -275,4 +275,54 @@ In this workshop we'll use a sample of this dataset using data from Argentina. Y
 ---
 # The KIWI data
 
-First, we need to load the `tidyverse` package and use a function from the `readr` package to
+First, we need to load the `tidyverse` package and use a function from the `readr` package to load the data.
+
+```{r data-load}
+library(tidyverse)
+
+# The url link to the location of the dataset
+url_link <- "https://raw.githubusercontent.com/r4hr/r4hr_paworld_intro_dplyr/main/salary_survey_ar.csv"
+
+# Load the csv file from GitHub
+salaries <- read_delim(url_link,    #<<
+                       delim = ";") #<<
+
+```
+
+---
+## A `glimpse` into the KIWI data
+
+```{r glimpse}
+# Let's explore the structure of the dataset
+glimpse(salaries)
+```
+
+```{r echo=FALSE}
+options(scipen = 999)
+```
+
+---
+## Let's explore the data
+
+.pull-left[
+One of the main things we want to explore are salaries, so, first, we have to know its distribution. Let's plot a histogram.
+
+```{r hist1, out.width="70%"}
+ggplot(salaries, 
+       aes(x = base_salary)) +
+  geom_histogram()
+```
+
+]
+
+--
+.pull-right[
+What happened here? `r emo::ji("surprised")`
+
+Let's take a look into the variable.
+
+```{r summary1}
+summary(salaries$base_salary)
+```
+
+]
