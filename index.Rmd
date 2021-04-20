@@ -158,7 +158,7 @@ That's why cleaning and tidying your data explains from 60 al 80% of the time of
 background-color: #BDCBD4
 # Tidyverse
 
-Tidyverse is a collection of packaged for cleaning, transforming, manipulating and wrangling data. 
+Tidyverse is a collection of packages for cleaning, transforming, manipulating and wrangling data. 
 
 .center[<img src="Files/tidyverse_packs.jpeg" width="40%"/>]
 
@@ -699,7 +699,7 @@ salaries_clean %>%
 
 .right-column[
 1. `group_by` by `role` and `gender`.
-2. Estimate the `median_salary` with the function.
+2. Estimate the `median_salary` with the function `median`.
 3. Store the results in a new object call `gender_median_salary`
 4. Make a bar plot using this code:
 
@@ -722,7 +722,7 @@ First, let's create the summary calculation:
 ```{r median}
 gender_median_salary <- salaries_clean %>% 
   group_by(role, gender) %>% 
-  summarise(median_salary = mean(int_salary))
+  summarise(median_salary = median(int_salary))
 
 gender_median_salary
 ```
@@ -966,15 +966,16 @@ This is the end of the workshop. We hope you have enjoyed it and mainly, find it
 If you speak Spanish you're welcome to join the [Club de R para RRHH](https://linktr.ee/r4hrclub). If you don't speak Spanish and want to start your own community, count with us.
 
 ---
+class: middle
 # Thank you very much!!!
 .pull-left[
 <img src="https://media.giphy.com/media/mqd0IiCu4iBVK/giphy.gif" />
 ]
 
 .pull-right[
-* `r emo::ji("rocket")` Alithu Castro
+* `r emo::ji("rocket")` [Alithu Castro](https://www.linkedin.com/in/alithucastro/)
 
-* `r emo::ji("spock")` Luis Grau
+* `r emo::ji("spock")` [Luis Grau](https://www.linkedin.com/in/luis-grau-r-212b3a9/)
 
-* `r emo::ji("rockstar")` Sergio Garcia Mora
+* `r emo::ji("rockstar")` [Sergio Garcia Mora](https://www.linkedin.com/in/sergiogarciamora/)
 ]
