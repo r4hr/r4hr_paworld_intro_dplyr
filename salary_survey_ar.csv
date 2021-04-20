@@ -1,7 +1,7 @@
-gender;age;university_type;industry;company_size;company_type;hr_employees;role;team_managed;hr_experiencie_years;base_salary;satisfaction;looking_for_job
+gender;age;university_type;industry;company_size;company_type;hr_employees;role;team_managed;hr_experience_years;base_salary;satisfaction;looking_for_job
 Female;31;Private;Goverment;400;National;6;Administrative;0;8;41000;2;No but open to opportunities
 Female;28;Private;Food and Beverages;150;National;3;Administrative;0;9;40000;4;No but open to opportunities
-Male;25;Private;Mining;186;National;2;Administrative;0;2;43954,43;3;No but open to opportunities
+Male;25;Private;Mining;186;National;2;Administrative;0;2;43954.43;3;No but open to opportunities
 Female;33;Private;Consulting Services;4;National;1;Administrative;0;3;40000;3;Actively looking for a job
 Female;24;Private;Construction;80;National;1;Administrative;0;1;15000;2;Actively looking for a job
 Female;30;Private;Health;135;National;3;Administrative;0;6;57000;3;Actively looking for a job
