@@ -465,9 +465,9 @@ salaries %>%
 # filter()
 ## Let's go!
 
-Let's create a new dataframe with clean data with the helping function `between`:
+Let's create a new dataframe with clean data with the helper function `between`:
 ```{r filter-final}
-clean_salaries <- salaries %>% 
+salaries_clean <- salaries %>% 
   filter(between(base_salary, # Variable to filter #<< 
                  20000,       # Low filter #<<
                  500000),     # Top filter #<<
@@ -477,7 +477,7 @@ clean_salaries <- salaries %>%
 --
 .right[
 ```{r hist2, echo=FALSE, out.width="30%"}
-ggplot(clean_salaries, aes(x = base_salary))+
+ggplot(salaries_clean, aes(x = base_salary))+
   geom_histogram()
 ```
 ]
@@ -489,7 +489,7 @@ ggplot(clean_salaries, aes(x = base_salary))+
 The `select()` function allows you to choose the variables you want to analyze. We can also drop variables we want to exclude.
 
 ```{r select1}
-clean_salaries <- clean_salaries %>% 
+salaries_clean <- salaries_clean %>% 
   select(-age) # Exclude age variable
 ```
 
@@ -540,10 +540,10 @@ gt(
 Now we can create a new column, call `int_salary` based on the exchange rate. To achieve this we have to create a new column, based on the `base_salary` original variable, divided by the exchange rate.
 
 ```{r mutate1}
-clean_salaries <- clean_salaries %>%     # Overwrite the same dataframe
+salaries_clean <- salaries_clean %>%     # Overwrite the same dataframe
   mutate(int_salary = base_salary / 112) # Estimate salary in Euro #<<
 
-glimpse(clean_salaries)
+glimpse(salaries_clean)
 ```
 
 ---
@@ -568,7 +568,7 @@ class: inverse
 Let's make a plot of the mean salary by role.
 
 ```{r mutate2, fig.show='hide'}
-clean_salaries %>% 
+salaries_clean %>% 
   group_by(role) %>% 
   summarise(mean_salary = mean(int_salary)) %>% 
   ggplot(aes(x = mean_salary, y = role)) +
@@ -594,7 +594,7 @@ The `role` variable is plotted alphabetically ordered, which in this case is not
 We can use `mutate()` to overwrite the variable and change its properties. So, let's transform the variable into a `factor` type, so we can define the levels of the variable.
 
 ```{r mutate3}
-clean_salaries <- clean_salaries %>% 
+salaries_clean <- salaries_clean %>% 
   mutate(role = factor(role,         # Overwrite the same variable #<<
                        # Define the order of the variable
                        levels = c("Administrative", "Analyst", "Supervisor",       #<<
@@ -609,7 +609,7 @@ clean_salaries <- clean_salaries %>%
 Let's repeat our last plot:
 
 ```{r mutate4, fig.show='hide'}
-clean_salaries %>% 
+salaries_clean %>% 
   group_by(role) %>% 
   summarise(mean_salary = mean(int_salary)) %>% 
   ggplot(aes(x = mean_salary, y = role)) +
@@ -624,3 +624,42 @@ clean_salaries %>%
 ```
 
 ]
+
+---
+# mutate()
+## Helper functions
+
+Two great helper functions to use with `mutate()` are `if_else()` and `case_when()`.
+
+--
+* `if_else()` adds a value if the condition of the original variable is met.
+
+--
+* `case_when()` allows us to create an ordinal variable from an numeric variable.
+
+--
+For instance, let's create a new column based on `satisfaction`, called `engaged` in which R writes a 1 when `satisfaction >= 4` and a 0 when it's lower than 4.
+
+```{r if_else1}
+salaries_clean <- salaries_clean %>% 
+  mutate(engaged = if_else(satisfaction >= 4, # Condition #<<
+                           1,                 # Value if true #<<
+                           0))                # Value if false #<<
+```
+
+---
+# mutate()
+## Helper functions
+
+`case_when()` allows us to create categories from a numerical variable. So this is very helpful when we have a variable such as `company_size` that shows the number of employees. Let's create another variable from `company_size` to simplify it.
+
+```{r case_when}
+salaries_clean <- salaries_clean %>% 
+  rename(number_employees = company_size) %>% 
+  mutate(company_size = case_when(        #<<
+    number_employees < 500 ~ "Small",     #<<
+    number_employees < 2000 ~ "Medium",   #<<
+    TRUE ~ "Large"                        #<<
+           ))
+```
+
