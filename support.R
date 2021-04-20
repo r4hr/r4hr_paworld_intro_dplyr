@@ -116,3 +116,78 @@ salaries %>%
   filter(industry == "Media") %>% 
   mutate(int_salary = base_salary / 74) %>% 
   select(base_salary, int_salary)
+
+
+gender_median_salary <- salaries_clean %>% 
+  group_by(role, gender) %>% 
+  summarise(median_salary = mean(int_salary))
+
+ggplot(gender_median_salary,   # Dataframe
+       aes(x = role,           # Map role to the x axis
+           y = median_salary,  # Map median_salary to the y axis
+           fill = gender)) +   # Map gender to color the bars
+  geom_col(position = "dodge")
+
+
+
+gender_colors <- c("#8624F5", "#1FC3AA")
+
+# Use it in your plot
+ggplot(gender_median_salary,   # Dataframe
+       aes(x = role,           # Map role to the x axis
+           y = median_salary,  # Map median_salary to the y axis
+           fill = gender)) +   # Map gender to color the bars
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = gender_colors) + #<<
+  theme_minimal()              # Adds a theme layer #<<
+
+ggplot(salaries_clean, 
+       aes(x = role,
+           y = int_salary,
+           fill = gender)) +
+  geom_boxplot() +
+  scale_fill_manual(values = gender_colors) +
+  theme_minimal()
+
+
+
+# Create a new dataframe
+gap_analysis <- salaries_clean %>% 
+  select(role, gender, int_salary)
+
+
+# Calculate the mean salary for gender and for each position
+gap <- gap_analysis %>% 
+  group_by(gender, role) %>% 
+  summarise(mean_salary = mean(int_salary))
+
+library(scales)
+
+gap_wider <- gap %>% 
+  pivot_wider(., # With the point we're using all the variables.
+              names_from = gender,  # Names for the new columns
+              values_from = mean_salary) %>% # Values for the new columns
+  mutate(salary_gap = percent((Male-Female)/Male, 1),
+         x = (Male + Female)/2) # The mean of both salaries, we need it for the plot
+
+gap_wider
+
+
+library(ggalt)
+
+
+ggplot(gap_wider,
+       aes(x = Female, xend = Male, y = role,
+           group = role, label = salary_gap)) +
+  geom_dumbbell(color = "#808080",                # Make the dumb bell plot
+                size_x = 3, size_xend = 3,
+                colour_x = gender_colors[1],
+                colour_xend = gender_colors[2]) +
+  geom_text(data = gap_wider,
+            aes(x, role, label = salary_gap), nudge_y = .2) +
+  theme_minimal() +
+  labs(title = "Gender Pay Gap in HR Positions",
+       subtitle = "Data Salary from Argentina",
+       x ="", y = "Role",
+       caption = "Source: Club de R para RRHH \n For the People Analytics World 2021")
+  

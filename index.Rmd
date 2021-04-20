@@ -915,7 +915,7 @@ p <- ggplot(gap_wider,                             # Save the plot in a object
 # Gender Salary Gap Plot
 ## Walkthrough
 
-Now use the object
+Now use the object `r emo::ji("chart")`
 .left-column[
 ```{r gap5, fig.show='hide'}
 p
@@ -924,8 +924,57 @@ p
 ]
 
 .right-column[
-```{r ref.label="gap5", echo=FALSE}
+```{r ref.label="gap5", echo=FALSE, out.width="60%"}
 
 ```
 
+]
+
+
+---
+# Gender Salary Gap Plot
+## Walkthrough
+
+.pull-left[
+Let's add a text the final touches
+```{r gap6, fig.show='hide'}
+p +
+geom_text(data = gap_wider,
+            aes(x, role, label = salary_gap), nudge_y = .2) +
+  theme_minimal() +
+  labs(title = "Gender Pay Gap in HR Positions",
+       subtitle = "Data Salary from Argentina",
+       x ="", y = "Role",
+       caption = "Source: Club de R para RRHH \n For the People Analytics World 2021")
+```
+
+]
+
+.pull-right[
+```{r ref.label="gap6", echo=FALSE}
+
+```
+
+]
+
+
+---
+# It's done!
+
+This is the end of the workshop. We hope you have enjoyed it and mainly, find it useful for your purposes.
+
+If you speak Spanish you're welcome to join the [Club de R para RRHH](https://linktr.ee/r4hrclub). If you don't speak Spanish and want to start your own community, count with us.
+
+---
+# Thank you very much!!!
+.pull-left[
+<img src="https://media.giphy.com/media/mqd0IiCu4iBVK/giphy.gif" />
+]
+
+.pull-right[
+* `r emo::ji("rocket")` Alithu Castro
+
+* `r emo::ji("spock")` Luis Grau
+
+* `r emo::ji("rockstar")` Sergio Garcia Mora
 ]

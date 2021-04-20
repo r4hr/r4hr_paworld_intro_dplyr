@@ -74,7 +74,7 @@ The [Club de R para RRHH](https://linktr.ee/r4hrclub) is a community for learnin
 
 We develop resources in Spanish, use HR data in our examples, and we learn how to use different packages, learn how to make predictive analysis, text mining and so on.
 
-This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more 🌎.
+This is a project that has gathered people from Perú, Chile, Paraguay, Colombia, Spain, Uruguay, Panamá, Argentina and many more 🌍.
 ]
 
 ---
@@ -168,6 +168,23 @@ Once the package is installed, we need to load or "activate" the package in orde
 ```r
 # Load tiverse packages
 library(tidyverse)
+```
+
+```
+## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+```
+
+```
+## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.1.0     v dplyr   1.0.5
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.1
+```
+
+```
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
 ```
 
 ---
@@ -277,7 +294,7 @@ With the available data we can:
 
 --
 .right-column[
-We also can analyze gender pay gaps. 👑💶👑
+We also can analyze gender pay gaps. 👑💰👑
 
 ]
 ---
@@ -323,19 +340,19 @@ glimpse(salaries)
 ```
 ## Rows: 464
 ## Columns: 13
-## $ gender              &lt;chr&gt; "Female", "Female", "Male", "Female", "Female", "Female", "Female", "Female", "Female", "Female~
-## $ age                 &lt;dbl&gt; 31, 28, 25, 33, 24, 30, 39, 23, 29, 30, 32, 28, 25, 24, 24, 33, 29, 46, 38, 24, 25, 35, 28, 43,~
-## $ university_type     &lt;chr&gt; "Private", "Private", "Private", "Private", "Private", "Private", "Private", "Private", "Privat~
-## $ industry            &lt;chr&gt; "Goverment", "Food and Beverages", "Mining", "Consulting Services", "Construction", "Health", "~
-## $ company_size        &lt;dbl&gt; 400, 150, 186, 4, 80, 135, 15, 10000, 300, 65, 10000, 120, 22000, 94, 94, 117, 225, 250, 800, 9~
-## $ company_type        &lt;chr&gt; "National", "National", "National", "National", "National", "National", "National", "National",~
-## $ hr_employees        &lt;dbl&gt; 6, 3, 2, 1, 1, 3, 1, 40, 2, 3, 10, 15, 2, 2, 2, 2, 6, 2, 2, 2, 11, 8, 5, 10, 300, 10, 7, 3, 8, ~
-## $ role                &lt;chr&gt; "Administrative", "Administrative", "Administrative", "Administrative", "Administrative", "Admi~
-## $ team_managed        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,~
-## $ hr_experience_years &lt;dbl&gt; 8, 9, 2, 3, 1, 6, 6, 3, 5, 6, 5, 8, 2, 1, 1, 4, 5, 18, 6, 1, 3, 2, 4, 0, 5, 7, 2, 12, 15, 3, 5,~
-## $ base_salary         &lt;dbl&gt; 41000.00, 40000.00, 43954.43, 40000.00, 15000.00, 57000.00, 66700.00, 54506.00, 21450.00, 50000~
-## $ satisfaction        &lt;dbl&gt; 2, 4, 3, 3, 2, 3, 4, 3, NA, NA, 4, 3, 3, 4, 4, 1, 3, 4, 4, 4, 3, 1, 3, 2, 2, 3, 3, NA, 3, 4, 4,~
-## $ looking_for_job     &lt;chr&gt; "No but open to opportunities", "No but open to opportunities", "No but open to opportunities",~
+## $ gender              &lt;chr&gt; "Female", "Female", "Male", "Female", "Female", "F~
+## $ age                 &lt;dbl&gt; 31, 28, 25, 33, 24, 30, 39, 23, 29, 30, 32, 28, 25~
+## $ university_type     &lt;chr&gt; "Private", "Private", "Private", "Private", "Priva~
+## $ industry            &lt;chr&gt; "Goverment", "Food and Beverages", "Mining", "Cons~
+## $ company_size        &lt;dbl&gt; 400, 150, 186, 4, 80, 135, 15, 10000, 300, 65, 100~
+## $ company_type        &lt;chr&gt; "National", "National", "National", "National", "N~
+## $ hr_employees        &lt;dbl&gt; 6, 3, 2, 1, 1, 3, 1, 40, 2, 3, 10, 15, 2, 2, 2, 2,~
+## $ role                &lt;chr&gt; "Administrative", "Administrative", "Administrativ~
+## $ team_managed        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0,~
+## $ hr_experience_years &lt;dbl&gt; 8, 9, 2, 3, 1, 6, 6, 3, 5, 6, 5, 8, 2, 1, 1, 4, 5,~
+## $ base_salary         &lt;dbl&gt; 41000.00, 40000.00, 43954.43, 40000.00, 15000.00, ~
+## $ satisfaction        &lt;dbl&gt; 2, 4, 3, 3, 2, 3, 4, 3, NA, NA, 4, 3, 3, 4, 4, 1, ~
+## $ looking_for_job     &lt;chr&gt; "No but open to opportunities", "No but open to op~
 ```
 
 
@@ -395,7 +412,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#djmbtqkrnh .gt_table {
+#vprahoyvzv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -420,7 +437,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-left-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_heading {
+#vprahoyvzv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -432,7 +449,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-right-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_title {
+#vprahoyvzv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -442,7 +459,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-bottom-width: 0;
 }
 
-#djmbtqkrnh .gt_subtitle {
+#vprahoyvzv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -452,13 +469,13 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-top-width: 0;
 }
 
-#djmbtqkrnh .gt_bottom_border {
+#vprahoyvzv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_col_headings {
+#vprahoyvzv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -473,7 +490,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-right-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_col_heading {
+#vprahoyvzv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -493,7 +510,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   overflow-x: hidden;
 }
 
-#djmbtqkrnh .gt_column_spanner_outer {
+#vprahoyvzv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -505,15 +522,15 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   padding-right: 4px;
 }
 
-#djmbtqkrnh .gt_column_spanner_outer:first-child {
+#vprahoyvzv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#djmbtqkrnh .gt_column_spanner_outer:last-child {
+#vprahoyvzv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#djmbtqkrnh .gt_column_spanner {
+#vprahoyvzv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -525,7 +542,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   width: 100%;
 }
 
-#djmbtqkrnh .gt_group_heading {
+#vprahoyvzv .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -547,7 +564,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   vertical-align: middle;
 }
 
-#djmbtqkrnh .gt_empty_group_heading {
+#vprahoyvzv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -562,15 +579,15 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   vertical-align: middle;
 }
 
-#djmbtqkrnh .gt_from_md > :first-child {
+#vprahoyvzv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#djmbtqkrnh .gt_from_md > :last-child {
+#vprahoyvzv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#djmbtqkrnh .gt_row {
+#vprahoyvzv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -589,7 +606,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   overflow-x: hidden;
 }
 
-#djmbtqkrnh .gt_stub {
+#vprahoyvzv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -601,7 +618,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   padding-left: 12px;
 }
 
-#djmbtqkrnh .gt_summary_row {
+#vprahoyvzv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -611,7 +628,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   padding-right: 5px;
 }
 
-#djmbtqkrnh .gt_first_summary_row {
+#vprahoyvzv .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -621,7 +638,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-top-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_grand_summary_row {
+#vprahoyvzv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -631,7 +648,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   padding-right: 5px;
 }
 
-#djmbtqkrnh .gt_first_grand_summary_row {
+#vprahoyvzv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -641,11 +658,11 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-top-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_striped {
+#vprahoyvzv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#djmbtqkrnh .gt_table_body {
+#vprahoyvzv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -654,7 +671,7 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-bottom-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_footnotes {
+#vprahoyvzv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -668,13 +685,13 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-right-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_footnote {
+#vprahoyvzv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#djmbtqkrnh .gt_sourcenotes {
+#vprahoyvzv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -688,46 +705,46 @@ The `filter()` function allows us to pass the observations (rows) that matches a
   border-right-color: #D3D3D3;
 }
 
-#djmbtqkrnh .gt_sourcenote {
+#vprahoyvzv .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#djmbtqkrnh .gt_left {
+#vprahoyvzv .gt_left {
   text-align: left;
 }
 
-#djmbtqkrnh .gt_center {
+#vprahoyvzv .gt_center {
   text-align: center;
 }
 
-#djmbtqkrnh .gt_right {
+#vprahoyvzv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#djmbtqkrnh .gt_font_normal {
+#vprahoyvzv .gt_font_normal {
   font-weight: normal;
 }
 
-#djmbtqkrnh .gt_font_bold {
+#vprahoyvzv .gt_font_bold {
   font-weight: bold;
 }
 
-#djmbtqkrnh .gt_font_italic {
+#vprahoyvzv .gt_font_italic {
   font-style: italic;
 }
 
-#djmbtqkrnh .gt_super {
+#vprahoyvzv .gt_super {
   font-size: 65%;
 }
 
-#djmbtqkrnh .gt_footnote_marks {
+#vprahoyvzv .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="djmbtqkrnh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="vprahoyvzv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
@@ -788,23 +805,25 @@ salaries %&gt;%
 
 ```
 ## # A tibble: 14 x 13
-##    gender   age university_type industry    company_size company_type  hr_employees role  team_managed hr_experience_years
-##    &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;                &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;               &lt;dbl&gt;
-##  1 Male      29 Private         Goverment            520 National                 7 CHRO             7                   6
-##  2 Female    30 Private         Goverment            508 National                 6 CHRO             4                   3
-##  3 Female    28 Private         Goverment           1400 National                20 CHRO            20                   3
-##  4 Female    34 Private         Techonology          300 Multinational           17 CHRO             7                  14
-##  5 Male      29 Private         Goverment            520 National                 7 CHRO             7                   6
-##  6 Female    32 Private         Media                 40 National                 1 CHRO             0                  10
-##  7 Male      47 Private         Techonology          200 National                 5 CHRO             4                  28
-##  8 Female    39 Private         Health               200 National                 8 CHRO             7                  15
-##  9 Female    40 Public          Education            250 Multinational            3 CHRO             2                  15
-## 10 Female    40 Public          Education            250 Multinational            3 CHRO             2                  15
-## 11 Female    40 Public          Education            250 Multinational            3 CHRO             2                  15
-## 12 Female    50 Public          Other                300 National                 3 CHRO             3                  15
-## 13 Male      37 Public          Automotive          1200 Multinational           12 CHRO             5                  15
-## 14 Female    33 Public          Goverment           6500 National                62 CHRO             9                   8
-## # ... with 3 more variables: base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;, looking_for_job &lt;chr&gt;
+##    gender   age university_type industry  company_size company_type hr_employees
+##    &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt;
+##  1 Male      29 Private         Goverment          520 National                7
+##  2 Female    30 Private         Goverment          508 National                6
+##  3 Female    28 Private         Goverment         1400 National               20
+##  4 Female    34 Private         Techonol~          300 Multination~           17
+##  5 Male      29 Private         Goverment          520 National                7
+##  6 Female    32 Private         Media               40 National                1
+##  7 Male      47 Private         Techonol~          200 National                5
+##  8 Female    39 Private         Health             200 National                8
+##  9 Female    40 Public          Education          250 Multination~            3
+## 10 Female    40 Public          Education          250 Multination~            3
+## 11 Female    40 Public          Education          250 Multination~            3
+## 12 Female    50 Public          Other              300 National                3
+## 13 Male      37 Public          Automoti~         1200 Multination~           12
+## 14 Female    33 Public          Goverment         6500 National               62
+## # ... with 6 more variables: role &lt;chr&gt;, team_managed &lt;dbl&gt;,
+## #   hr_experience_years &lt;dbl&gt;, base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;,
+## #   looking_for_job &lt;chr&gt;
 ```
 
 ---
@@ -822,15 +841,17 @@ salaries %&gt;%
 
 ```
 ## # A tibble: 6 x 13
-##   gender   age university_type industry       company_size company_type hr_employees role      team_managed hr_experience_ye~
-##   &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;                 &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;             &lt;dbl&gt;
-## 1 Female    31 Private         Goverment               400 National                6 Administ~            0                 8
-## 2 Female    28 Private         Food and Beve~          150 National                3 Administ~            0                 9
-## 3 Male      25 Private         Mining                  186 National                2 Administ~            0                 2
-## 4 Female    33 Private         Consulting Se~            4 National                1 Administ~            0                 3
-## 5 Female    24 Private         Construction             80 National                1 Administ~            0                 1
-## 6 Female    30 Private         Health                  135 National                3 Administ~            0                 6
-## # ... with 3 more variables: base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;, looking_for_job &lt;chr&gt;
+##   gender   age university_type industry   company_size company_type hr_employees
+##   &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt;
+## 1 Female    31 Private         Goverment           400 National                6
+## 2 Female    28 Private         Food and ~          150 National                3
+## 3 Male      25 Private         Mining              186 National                2
+## 4 Female    33 Private         Consultin~            4 National                1
+## 5 Female    24 Private         Construct~           80 National                1
+## 6 Female    30 Private         Health              135 National                3
+## # ... with 6 more variables: role &lt;chr&gt;, team_managed &lt;dbl&gt;,
+## #   hr_experience_years &lt;dbl&gt;, base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;,
+## #   looking_for_job &lt;chr&gt;
 ```
 
 ---
@@ -847,20 +868,22 @@ salaries %&gt;%
 
 ```
 ## # A tibble: 11 x 13
-##    gender   age university_type industry    company_size company_type hr_employees role        team_managed hr_experience_ye~
-##    &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;             &lt;dbl&gt;
-##  1 Female    24 Private         Constructi~           80 National                1 Administra~            0                 1
-##  2 Female    28 Private         Constructi~          200 National                5 Analyst                0                 5
-##  3 Female    30 Public          Constructi~          500 National                6 Analyst                0                 9
-##  4 Female    28 Public          Constructi~          200 National                2 Analyst                0                 4
-##  5 Female    36 Public          Constructi~          120 National                1 Head                   0                14
-##  6 Female    31 Private         Constructi~           70 National                2 Supervisor             1                 7
-##  7 Female    38 Public          Constructi~          137 National                2 Supervisor             1                14
-##  8 Female    44 Public          Constructi~           20 National                1 Supervisor             0                12
-##  9 Female    27 Public          Constructi~          450 National                3 Supervisor             0                 3
-## 10 Female    39 Private         Constructi~           50 National                2 Supervisor             1                14
-## 11 Female    27 Private         Constructi~           80 National                1 Supervisor             0                 2
-## # ... with 3 more variables: base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;, looking_for_job &lt;chr&gt;
+##    gender   age university_type industry  company_size company_type hr_employees
+##    &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt;
+##  1 Female    24 Private         Construc~           80 National                1
+##  2 Female    28 Private         Construc~          200 National                5
+##  3 Female    30 Public          Construc~          500 National                6
+##  4 Female    28 Public          Construc~          200 National                2
+##  5 Female    36 Public          Construc~          120 National                1
+##  6 Female    31 Private         Construc~           70 National                2
+##  7 Female    38 Public          Construc~          137 National                2
+##  8 Female    44 Public          Construc~           20 National                1
+##  9 Female    27 Public          Construc~          450 National                3
+## 10 Female    39 Private         Construc~           50 National                2
+## 11 Female    27 Private         Construc~           80 National                1
+## # ... with 6 more variables: role &lt;chr&gt;, team_managed &lt;dbl&gt;,
+## #   hr_experience_years &lt;dbl&gt;, base_salary &lt;dbl&gt;, satisfaction &lt;dbl&gt;,
+## #   looking_for_job &lt;chr&gt;
 ```
 
 ---
@@ -1005,7 +1028,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vlcfssifbu .gt_table {
+#letgsoqyic .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1030,7 +1053,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-left-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_heading {
+#letgsoqyic .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1042,7 +1065,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-right-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_title {
+#letgsoqyic .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1052,7 +1075,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-bottom-width: 0;
 }
 
-#vlcfssifbu .gt_subtitle {
+#letgsoqyic .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1062,13 +1085,13 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-top-width: 0;
 }
 
-#vlcfssifbu .gt_bottom_border {
+#letgsoqyic .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_col_headings {
+#letgsoqyic .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1083,7 +1106,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-right-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_col_heading {
+#letgsoqyic .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1103,7 +1126,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   overflow-x: hidden;
 }
 
-#vlcfssifbu .gt_column_spanner_outer {
+#letgsoqyic .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1115,15 +1138,15 @@ So, in order to calculate the `base_salary` you'll need this table:
   padding-right: 4px;
 }
 
-#vlcfssifbu .gt_column_spanner_outer:first-child {
+#letgsoqyic .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#vlcfssifbu .gt_column_spanner_outer:last-child {
+#letgsoqyic .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#vlcfssifbu .gt_column_spanner {
+#letgsoqyic .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1135,7 +1158,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   width: 100%;
 }
 
-#vlcfssifbu .gt_group_heading {
+#letgsoqyic .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1157,7 +1180,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   vertical-align: middle;
 }
 
-#vlcfssifbu .gt_empty_group_heading {
+#letgsoqyic .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1172,15 +1195,15 @@ So, in order to calculate the `base_salary` you'll need this table:
   vertical-align: middle;
 }
 
-#vlcfssifbu .gt_from_md > :first-child {
+#letgsoqyic .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vlcfssifbu .gt_from_md > :last-child {
+#letgsoqyic .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vlcfssifbu .gt_row {
+#letgsoqyic .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1199,7 +1222,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   overflow-x: hidden;
 }
 
-#vlcfssifbu .gt_stub {
+#letgsoqyic .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1211,7 +1234,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   padding-left: 12px;
 }
 
-#vlcfssifbu .gt_summary_row {
+#letgsoqyic .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1221,7 +1244,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   padding-right: 5px;
 }
 
-#vlcfssifbu .gt_first_summary_row {
+#letgsoqyic .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1231,7 +1254,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-top-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_grand_summary_row {
+#letgsoqyic .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1241,7 +1264,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   padding-right: 5px;
 }
 
-#vlcfssifbu .gt_first_grand_summary_row {
+#letgsoqyic .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1251,11 +1274,11 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-top-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_striped {
+#letgsoqyic .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#vlcfssifbu .gt_table_body {
+#letgsoqyic .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1264,7 +1287,7 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-bottom-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_footnotes {
+#letgsoqyic .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1278,13 +1301,13 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-right-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_footnote {
+#letgsoqyic .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#vlcfssifbu .gt_sourcenotes {
+#letgsoqyic .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1298,46 +1321,46 @@ So, in order to calculate the `base_salary` you'll need this table:
   border-right-color: #D3D3D3;
 }
 
-#vlcfssifbu .gt_sourcenote {
+#letgsoqyic .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#vlcfssifbu .gt_left {
+#letgsoqyic .gt_left {
   text-align: left;
 }
 
-#vlcfssifbu .gt_center {
+#letgsoqyic .gt_center {
   text-align: center;
 }
 
-#vlcfssifbu .gt_right {
+#letgsoqyic .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vlcfssifbu .gt_font_normal {
+#letgsoqyic .gt_font_normal {
   font-weight: normal;
 }
 
-#vlcfssifbu .gt_font_bold {
+#letgsoqyic .gt_font_bold {
   font-weight: bold;
 }
 
-#vlcfssifbu .gt_font_italic {
+#letgsoqyic .gt_font_italic {
   font-style: italic;
 }
 
-#vlcfssifbu .gt_super {
+#letgsoqyic .gt_super {
   font-size: 65%;
 }
 
-#vlcfssifbu .gt_footnote_marks {
+#letgsoqyic .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="vlcfssifbu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="letgsoqyic" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
@@ -1396,19 +1419,19 @@ glimpse(salaries_clean)
 ```
 ## Rows: 445
 ## Columns: 13
-## $ gender              &lt;chr&gt; "Female", "Female", "Male", "Female", "Female", "Female", "Female", "Female", "Female", "Female~
-## $ university_type     &lt;chr&gt; "Private", "Private", "Private", "Private", "Private", "Private", "Private", "Private", "Privat~
-## $ industry            &lt;chr&gt; "Goverment", "Food and Beverages", "Mining", "Consulting Services", "Health", "Techonology", "F~
-## $ company_size        &lt;dbl&gt; 400, 150, 186, 4, 135, 15, 10000, 300, 65, 10000, 120, 22000, 94, 94, 117, 225, 250, 800, 94, 1~
-## $ company_type        &lt;chr&gt; "National", "National", "National", "National", "National", "National", "National", "National",~
-## $ hr_employees        &lt;dbl&gt; 6, 3, 2, 1, 3, 1, 40, 2, 3, 10, 15, 2, 2, 2, 2, 6, 2, 2, 2, 11, 5, 10, 300, 10, 7, 3, 8, 160, 5~
-## $ role                &lt;chr&gt; "Administrative", "Administrative", "Administrative", "Administrative", "Administrative", "Admi~
-## $ team_managed        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,~
-## $ hr_experience_years &lt;dbl&gt; 8, 9, 2, 3, 6, 6, 3, 5, 6, 5, 8, 2, 1, 1, 4, 5, 18, 6, 1, 3, 4, 0, 5, 7, 2, 12, 15, 3, 5, 10, 1~
-## $ base_salary         &lt;dbl&gt; 41000.00, 40000.00, 43954.43, 40000.00, 57000.00, 66700.00, 54506.00, 21450.00, 50000.00, 94050~
-## $ satisfaction        &lt;dbl&gt; 2, 4, 3, 3, 3, 4, 3, NA, NA, 4, 3, 3, 4, 4, 1, 3, 4, 4, 4, 3, 3, 2, 2, 3, 3, NA, 3, 4, 4, 3, 3,~
-## $ looking_for_job     &lt;chr&gt; "No but open to opportunities", "No but open to opportunities", "No but open to opportunities",~
-## $ int_salary          &lt;dbl&gt; 366.0714, 357.1429, 392.4503, 357.1429, 508.9286, 595.5357, 486.6607, 191.5179, 446.4286, 839.7~
+## $ gender              &lt;chr&gt; "Female", "Female", "Male", "Female", "Female", "F~
+## $ university_type     &lt;chr&gt; "Private", "Private", "Private", "Private", "Priva~
+## $ industry            &lt;chr&gt; "Goverment", "Food and Beverages", "Mining", "Cons~
+## $ company_size        &lt;dbl&gt; 400, 150, 186, 4, 135, 15, 10000, 300, 65, 10000, ~
+## $ company_type        &lt;chr&gt; "National", "National", "National", "National", "N~
+## $ hr_employees        &lt;dbl&gt; 6, 3, 2, 1, 3, 1, 40, 2, 3, 10, 15, 2, 2, 2, 2, 6,~
+## $ role                &lt;chr&gt; "Administrative", "Administrative", "Administrativ~
+## $ team_managed        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0,~
+## $ hr_experience_years &lt;dbl&gt; 8, 9, 2, 3, 6, 6, 3, 5, 6, 5, 8, 2, 1, 1, 4, 5, 18~
+## $ base_salary         &lt;dbl&gt; 41000.00, 40000.00, 43954.43, 40000.00, 57000.00, ~
+## $ satisfaction        &lt;dbl&gt; 2, 4, 3, 3, 3, 4, 3, NA, NA, 4, 3, 3, 4, 4, 1, 3, ~
+## $ looking_for_job     &lt;chr&gt; "No but open to opportunities", "No but open to op~
+## $ int_salary          &lt;dbl&gt; 366.0714, 357.1429, 392.4503, 357.1429, 508.9286, ~
 ```
 
 
@@ -1836,7 +1859,7 @@ p &lt;- ggplot(gap_wider,                             # Save the plot in a objec
 # Gender Salary Gap Plot
 ## Walkthrough
 
-Now use the object
+Now use the object 💹
 .left-column[
 
 ```r
@@ -1846,8 +1869,56 @@ p
 ]
 
 .right-column[
-&lt;img src="index_files/figure-html/unnamed-chunk-14-1.png" width="504" /&gt;
+&lt;img src="index_files/figure-html/unnamed-chunk-14-1.png" width="60%" /&gt;
 
+]
+
+
+---
+# Gender Salary Gap Plot
+## Walkthrough
+
+.pull-left[
+Let's add a text the final touches
+
+```r
+p +
+geom_text(data = gap_wider,
+            aes(x, role, label = salary_gap), nudge_y = .2) +
+  theme_minimal() +
+  labs(title = "Gender Pay Gap in HR Positions",
+       subtitle = "Data Salary from Argentina",
+       x ="", y = "Role",
+       caption = "Source: Club de R para RRHH \n For the People Analytics World 2021")
+```
+
+]
+
+.pull-right[
+&lt;img src="index_files/figure-html/unnamed-chunk-15-1.png" width="504" /&gt;
+
+]
+
+
+---
+# It's done!
+
+This is the end of the workshop. We hope you have enjoyed it and mainly, find it useful for your purposes.
+
+If you speak Spanish you're welcome to join the [Club de R para RRHH](https://linktr.ee/r4hrclub). If you don't speak Spanish and want to start your own community, count with us.
+
+---
+# Thank you very much!!!
+.pull-left[
+&lt;img src="https://media.giphy.com/media/mqd0IiCu4iBVK/giphy.gif" /&gt;
+]
+
+.pull-right[
+* 🚀 Alithu Castro
+
+* 🖖 Luis Grau
+
+* 👩‍🎤 Sergio Garcia Mora
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
