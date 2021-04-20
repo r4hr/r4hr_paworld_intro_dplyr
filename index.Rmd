@@ -202,7 +202,7 @@ That means when you understand the basics of one function you get an idea of how
 
 Let's take a look into a dplyr's sequence:
 
-Let's say you have a salary survey and you want to know the mean salary for HR positions. Can you tell me the steps of this script?:
+Let's say you have a salary survey and you want to know the mean salary for HR positions. Can you follow every step of this script?:
 
 --
 
@@ -259,6 +259,35 @@ salaries %>%
 ```
 
 ---
+ class: inverse, middle, center
+# The Analysis Process
+
+1. Set an analysis goal.
+2. Gather and explore the data.
+3. The [Ben Teusch](https://www.linkedin.com/in/teuschb/) `r emo::ji("rockstar")` approach: Identify the groups to compare, calculate summary statistics, plot results.
+
+---
+# The Analysis Process
+
+.left-column[
+## Set an analysis goal
+]
+
+.right-column[
+With the available data we can:
+
+* Make salary analysis per role.
+* Make salary analysis per industry.
+* Analyze relationships between salary and satisfaction.
+* Analyze relationships salary and intention to leave.
+]
+
+--
+.right-column[
+We also can analyze gender pay gaps. `r emo::ji("king")``r emo::ji("money")``r emo::ji("queen")`
+
+]
+---
 class: inverse, middle, center
 # Let's get to know our data
 
@@ -266,9 +295,9 @@ class: inverse, middle, center
 # `r emo::ji("kiwi")` KIWI: Key Investigation of Wages & Income
 ## aka HR Salary Survey from Argentina
 
-Last year, with the *Club de R para RRHH* conducted a salary survey across Latin America to know salaries and some other things that we were interested on.
+Last year, with the *Club de R para RRHH* we conducted a salary survey across Latin America to know salaries and some other things that we were interested on.
 
-The other reason why we did this survey is because the lack of datasets in Spanish to practice.
+Another reason why we did this survey is because the lack of datasets in Spanish to practice.
 
 In this workshop we'll use a sample of this dataset using data from Argentina. You can see and download the R script a full version of the analysis [in this link](https://rpubs.com/Data4HR/encuesta-kiwi-2020).
 
@@ -317,12 +346,281 @@ ggplot(salaries,
 
 --
 .pull-right[
-What happened here? `r emo::ji("surprised")`
+What happened here? `r emo::ji("confused")`
 
 Let's take a look into the variable.
 
 ```{r summary1}
 summary(salaries$base_salary)
+```
+
+]
+
+--
+.pull-right[
+There are some valid cases with unusual high cases (over `AR$ 2M`), and there are spurious cases with `AR$ 2`. `r emo::ji("surprised")`
+]
+--
+
+.pull-right[
+So, let's meet our first `dplyr` function: `filter()`.
+]
+
+---
+# filter()
+
+The `filter()` function allows us to pass the observations (rows) that matches a criteria. We'll need some logical operators for this.
+
+.center[
+```{r logical-operators, echo = FALSE}
+library(gt)
+gt(
+  data.frame(
+    "Symbol" = c("<", "<=", ">", ">=", "==", "!=", "&", "|"),
+    "Meaning" = c("less than", "less or equal to", "higher than", "higer or equal to",
+                "equal to", "not equal to", "and", "or")
+  )
+) %>% 
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+]
+
+---
+# filter()
+## Examples
+
+Let's see the data of the *CHRO* `role`:
+
+```{r filter1}
+salaries %>% 
+  filter(role == "CHRO") #<<
+```
+
+---
+# filter()
+## Examples
+
+All the data **but** CHRO.
+
+```{r filter2}
+salaries %>% 
+  filter(role != "CHRO") %>% #<<
+  head() # Erase the last pipe and this line
+```
+
+---
+# filter()
+## Examples
+
+
+Filter by two conditions:
+```{r filter3}
+salaries %>% 
+  filter(industry == "Construction" & gender == "Female") #<<
+```
+
+---
+# filter()
+## Examples
+
+.pull-left[
+`r emo::ji("question")` What if you want to filter data by **two** industries?
+
+```{r filter4}
+salaries %>% 
+  filter(industry == "Media" & industry == "Chemical Industry") %>%  #<<
+select(role, base_salary) 
+```
+]
+
+--
+
+.pull-right[
+This would do the job `r emo::ji("+1")`
+```{r filter5}
+salaries %>% 
+  filter(industry == "Media" | industry == "Chemical Industry") %>%  #<<
+select(role, base_salary) %>% head()
+```
+
+]
+
+---
+# filter()
+## Examples
+
+A best-practice way to filter by more than one condition is using a selection vector:
+
+```{r filter6}
+salaries %>% 
+  filter(industry %in% c("Media", "Health", "Technology")) %>% #<<
+  select(role, base_salary)
+```
+
+
+---
+# filter()
+## Let's go!
+
+Let's create a new dataframe with clean data with the helping function `between`:
+```{r filter-final}
+clean_salaries <- salaries %>% 
+  filter(between(base_salary, # Variable to filter #<< 
+                 20000,       # Low filter #<<
+                 500000),     # Top filter #<<
+         hr_experience_years < 30) #<<
+```
+
+--
+.right[
+```{r hist2, echo=FALSE, out.width="30%"}
+ggplot(clean_salaries, aes(x = base_salary))+
+  geom_histogram()
+```
+]
+
+---
+# select()
+
+.pull-left[
+The `select()` function allows you to choose the variables you want to analyze. We can also drop variables we want to exclude.
+
+```{r select1}
+clean_salaries <- clean_salaries %>% 
+  select(-age) # Exclude age variable
+```
+
+]
+
+.pull-right[
+<img src="https://media.giphy.com/media/PPw87BtlPrQIg/giphy.gif" />
+]
+
+---
+# Let's make sense of our data
+
+.left-column[
+<img src="https://media.giphy.com/media/UTq0AvyCU1uJBwanNQ/giphy.gif" />
+]
+
+.right-column[
+Salaries are in Argentinean pesos... so it's hard to tell if a `base_salary` is high or low because we don't know the currency, so we need to transform the `base_salary` into a currency we know.
+]
+
+--
+.right-column[
+Enter the `mutate()` function.
+
+]
+
+---
+# mutate()
+
+One use of `mutate()` is to create a new variable from existing variables. Something important to know is that the new variable is not added to the original data source... unless we tell R to do it so.
+
+--
+So, in order to calculate the `base_salary` you'll need this table:
+
+```{r exchange, echo = FALSE}
+gt(
+  data.frame(
+    "Currency" = c("Euro", "Dollar", "Pound Sterling", "Swiss Franc", "Yen", "Real", "Canadian Dollar" ),
+    "Divide by" = c(112, 93, 127, 102, .86, 17, 74)
+  )
+)
+```
+
+
+---
+# mutate()
+
+Now we can create a new column, call `int_salary` based on the exchange rate. To achieve this we have to create a new column, based on the `base_salary` original variable, divided by the exchange rate.
+
+```{r mutate1}
+clean_salaries <- clean_salaries %>%     # Overwrite the same dataframe
+  mutate(int_salary = base_salary / 112) # Estimate salary in Euro #<<
+
+glimpse(clean_salaries)
+```
+
+---
+---
+class: inverse
+# Practice
+
+.pull-left[
+<img src="https://pbs.twimg.com/media/DpTez7MUUAUM5PX.jpg" />
+]
+
+.pull-right[
+1. Load data
+2. Filter salaries between AR$ 20.000 and 500.000
+3. Create a new column with a new currency using the proper exchange rate.
+]
+---
+# mutate()
+## Other uses
+
+.pull-left[
+Let's make a plot of the mean salary by role.
+
+```{r mutate2, fig.show='hide'}
+clean_salaries %>% 
+  group_by(role) %>% 
+  summarise(mean_salary = mean(int_salary)) %>% 
+  ggplot(aes(x = mean_salary, y = role)) +
+  geom_col()
+```
+
+]
+
+.pull-right[
+```{r ref.label="mutate2", echo = FALSE}
+
+```
+
+]
+
+
+---
+# mutate()
+## Other uses
+
+The `role` variable is plotted alphabetically ordered, which in this case is not appropiate because it doesn't respect the hierarchy of the different positions.
+
+We can use `mutate()` to overwrite the variable and change its properties. So, let's transform the variable into a `factor` type, so we can define the levels of the variable.
+
+```{r mutate3}
+clean_salaries <- clean_salaries %>% 
+  mutate(role = factor(role,         # Overwrite the same variable #<<
+                       # Define the order of the variable
+                       levels = c("Administrative", "Analyst", "Supervisor",       #<<
+                                  "HRBP", "Head", "Manager", "CHRO"))) #<<
+```
+
+---
+# mutate()
+## Other uses
+
+.pull-left[
+Let's repeat our last plot:
+
+```{r mutate4, fig.show='hide'}
+clean_salaries %>% 
+  group_by(role) %>% 
+  summarise(mean_salary = mean(int_salary)) %>% 
+  ggplot(aes(x = mean_salary, y = role)) +
+  geom_col()
+```
+
+]
+
+.pull-right[
+```{r ref.label="mutate4", echo = FALSE}
+
 ```
 
 ]
