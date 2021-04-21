@@ -274,7 +274,8 @@ p <- ggplot(gap_wider,                             # Save the plot in a object
    geom_dumbbell(color = "#808080",                # Make the dumb bell plot #<<
                 size_x = 3, size_xend = 3, #<<
                 colour_x = gender_colors[1], #<<
-                colour_xend = gender_colors[2]) #<<
+                colour_xend = gender_colors[2],
+                show.legend = TRUE) #<<
 
 
 p
@@ -287,8 +288,8 @@ geom_text(data = gap_wider,
        subtitle = "Data Salary from Argentina",
        x ="", y = "Role",
        caption = "Source: Club de R para RRHH \n For the People Analytics World 2021") +
-  annotate("text",x = 800, y = "CHRO", label = "Female", color = "#8624F5",size = 5) +
-  annotate("text",x = 780, y = "Manager", label = "Male", color = "#1FC3AA", size = 5) 
+  annotate("text",x = 1340, y = "Manager", label = "Female", color = "#8624F5",size = 4) +
+  annotate("text",x = 1950, y = "Manager", label = "Male", color = "#1FC3AA", size = 4) 
   
 
 
